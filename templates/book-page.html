@@ -1,0 +1,20 @@
+{% extends 'templates/base.html' %}
+
+{% block body %}
+
+<section class="section" style="height: 100%;">
+    <div class="container" style="height: 100%;">
+        <div class="columns">
+            <div style="height: 100vh;" class="column">
+                {% include 'templates/sidebar.html' %}
+            </div>
+            <div style="height: 100vh;" class="column is-9">
+                <div style="width: 100%; height: 89%; border: 1px solid black;">
+                    <iframe width="100%" height="100%" src="textbook/{{ current_main }}.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

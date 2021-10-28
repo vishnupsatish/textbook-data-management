@@ -1,0 +1,14 @@
+<aside class="menu sidebar" style="height: 89%;">
+    <ul class="menu-list">
+        {% for main in all_sections %}
+            <li class="menu-label">
+                <a href="{{ slugify(main) }}.html">{{ main }}</a>
+            </li>
+
+            {% for sub in all_sections[main] %}
+                <li><a href="{{ slugify(main) }}.html#{{ all_sections[main][sub] }}">{{ sub }}</a></li>
+            {% endfor %}
+
+        {% endfor %}
+    </ul>
+</aside>
