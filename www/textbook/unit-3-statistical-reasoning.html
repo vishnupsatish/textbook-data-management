@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="referrer" content="never">
+        <meta name="referrer" content="no-referrer">
         <meta charset="UTF-8">
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="c49 c260">
+    <body class="c49 c260" onload="frame_init()">
         
         <h1 class="c47 c107 c48" id="h.njhnvwl7ruoh"><span class="c140 c88 c31">Unit 3:  Statistical Reasoning</span></h1>
 <p class="c29"><span class="c113 c74">main</span><span class="c74 c113">_section</span></p>
@@ -1901,5 +1903,17 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <h1 class="c128 c107 c48 c136" id="h.xw6vcnp19kpx"><span class="c140 c88 c31"></span></h1>
         
+
+        <script>
+            function frame_init() {
+                window.parent.send_id(); 
+                return true;
+            }
+
+            function scroll_to_id(id) {
+                document.getElementById(id).scrollIntoView();
+            }
+        </script>
+
     </body>
 </html>

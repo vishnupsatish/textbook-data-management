@@ -4,3 +4,7 @@
     border: 1px solid black;
     background-color: white;
 }
+
+html {
+    background-color: rgb(62, 184, 255);
+}

@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="referrer" content="never">
+        <meta name="referrer" content="no-referrer">
         <meta charset="UTF-8">
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="c49 c260">
+    <body class="c49 c260" onload="frame_init()">
         
         <div><p class="c29 c2"><span class="c0"></span></p></div>
 <p class="c147 c48"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 641.50px; height: 471.32px;"><img alt="" src="images/image590.jpg" style="width: 641.50px; height: 471.32px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
@@ -278,5 +280,17 @@
 <p class="c99 c48 c2"><span class="c135 c181 c88 c83"></span></p>
 <h1 class="c128 c107 c48 c136" id="h.5stixceffrx5"><span class="c140 c88 c31"></span></h1>
         
+
+        <script>
+            function frame_init() {
+                window.parent.send_id(); 
+                return true;
+            }
+
+            function scroll_to_id(id) {
+                document.getElementById(id).scrollIntoView();
+            }
+        </script>
+
     </body>
 </html>

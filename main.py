@@ -4,6 +4,9 @@ import os
 import shutil
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from slugify import slugify
+import requests
+import tinycss2
+
 
 env = Environment(
     loader=FileSystemLoader("templates"),
@@ -34,19 +37,29 @@ for filename in os.listdir('www'):
 with open('Textbook.html', 'r') as book_content:
     textbook = BeautifulSoup(book_content)
 
-# Get CSS
+# Get and parse CSS
 textbook_style = textbook.head.style
-# Add CSS style to www/textbook/style.css
+parsed_css = tinycss2.parse_stylesheet(textbook_style.text)
+
+# Get the imported URL from Google Fonts using the CSS parser
+import_url = parsed_css[0].prelude[1].arguments[0].value
+
+# Get the text from the imported font URL (adding it directly as an @import throws a 403)
+import_font = requests.get(import_url).text
+
 os.mkdir('www/textbook')
+
+# Add CSS style to www/textbook/style.css
 with open('www/textbook/style.css', 'w+') as style_file:
-    style_file.write(textbook_style.text)
+    
+    style_file.write(import_font + textbook_style.text)
 
 textbook_body = list(textbook.body)
 
 # Holds a dict. Key: name of main_section. Value: dict where key
 # is name of title_section, value is ID of the title_section
 all_sections = {
-    'title': {}
+    'title': ('', {})
 }
 current_main_section = 'title'
 prev_cutoff = 0
@@ -63,7 +76,6 @@ shutil.copytree('templates/images', 'www/textbook/images')
 
 shutil.copytree('templates/assets', 'www/assets')
 
-print(*textbook.body['class'])
 
 for i, element in enumerate(textbook_body):
     prev_element = textbook_body[i - 1]
@@ -71,14 +83,12 @@ for i, element in enumerate(textbook_body):
         make_textbook_file(slugify(current_main_section), prev_cutoff, i - 1)
         prev_cutoff = i - 1
         current_main_section = rmw(prev_element.text)
-        all_sections[current_main_section] = {}
+        all_sections[current_main_section] = (prev_element['id'], {})
 
     elif rmw(element.text) == 'title_section':
-        all_sections[current_main_section][rmw(prev_element.text)] = prev_element['id']
+        all_sections[current_main_section][1][rmw(prev_element.text)] = prev_element['id']
 
 make_textbook_file(slugify(current_main_section), prev_cutoff, len(textbook_body) - 1)
-
-print(all_sections)
 
 env.globals.update(slugify=slugify, all_sections=all_sections)
 
@@ -86,4 +96,4 @@ book_template = env.get_template('book-page.html')
 
 for section in all_sections:
     with open(f'www/{slugify(section)}.html', 'w+') as book:
-        book.write(book_template.render(current_main=slugify(section)))
+        book.write(book_template.render(current_main=slugify(section), section=section))
