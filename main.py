@@ -19,20 +19,22 @@ def rmw(txt):
     return " ".join(normalize('NFKD', txt).split())
 
 
-ignore = {'.git'}
-
-# Delete everything in /www that is not in the set 'ignore'; we don't want to delete
-for filename in os.listdir('www'):
-    if filename in ignore:
-        continue
-    file_path = os.path.join('www', filename)
-    try:
-        if os.path.isfile(file_path) or os.path.islink(file_path):
-            os.unlink(file_path)
-        elif os.path.isdir(file_path):
-            shutil.rmtree(file_path)
-    except Exception as e:
-        print('Failed to delete %s. Reason: %s' % (file_path, e))
+if not os.path.isdir('www'):
+    os.mkdir('www')
+else:
+    ignore = {'.git'}
+    # Delete everything in /www that is not in the set 'ignore'; we don't want to delete
+    for filename in os.listdir('www'):
+        if filename in ignore:
+            continue
+        file_path = os.path.join('www', filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path)
+        except Exception as e:
+            print('Failed to delete %s. Reason: %s' % (file_path, e))
 
 shutil.copyfile('templates/index.html', 'www/index.html')
 
