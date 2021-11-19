@@ -8,3 +8,24 @@
 html {
     background-color: rgb(62, 184, 255);
 }
+
+.dontshow {
+    display: none;
+}
+
+.calc {
+    height: 600px;
+}
+
+#latex_writer {
+    width: 100%;
+    min-height: 600px;
+    padding: 15px;
+}
+
+#show_latex {
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+    padding: 15px;
+}

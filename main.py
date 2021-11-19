@@ -6,6 +6,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from slugify import slugify
 import requests
 import tinycss2
+from urllib.parse import unquote
 
 
 env = Environment(
@@ -33,9 +34,16 @@ for filename in os.listdir('www'):
     except Exception as e:
         print('Failed to delete %s. Reason: %s' % (file_path, e))
 
+shutil.copyfile('templates/index.html', 'www/index.html')
+
 # Parse HTML of the textbook using BeautifulSoup
 with open('Textbook.html', 'r') as book_content:
     textbook = BeautifulSoup(book_content)
+
+# Parse HTML of the textbook (with images hyperlinked to Google) using BeautifulSoup
+with open('Textbook_images_hyperlinked.html', 'r') as book_content:
+    textbook_img_hyp = BeautifulSoup(book_content)
+
 
 # Get and parse CSS
 textbook_style = textbook.head.style
@@ -55,6 +63,7 @@ with open('www/textbook/style.css', 'w+') as style_file:
     style_file.write(import_font + textbook_style.text)
 
 textbook_body = list(textbook.body)
+textbook_img_hyp_body = list(textbook_img_hyp.body)
 
 # Holds a dict. Key: name of main_section. Value: dict where key
 # is name of title_section, value is ID of the title_section
@@ -75,6 +84,22 @@ def make_textbook_file(name, start, end):
 shutil.copytree('templates/images', 'www/textbook/images')
 
 shutil.copytree('templates/assets', 'www/assets')
+
+
+img = textbook.findChildren('img')
+img_hyp = textbook_img_hyp.findChildren('img')
+
+
+# Replace all image equations to high-quality MathJax equations
+for i, child in enumerate(img):
+    element_img_hyp = img_hyp[i]
+    if 'google.com/chart' in element_img_hyp.get('src', ''):
+        equ = unquote(element_img_hyp['src'].split('chl=')[-1]).replace('\\+', '').replace('\\-', '')
+        new_tag = textbook.new_tag("span")
+        new_tag['class'] = 'mathjax-desmos'
+        new_tag.string = f'\\({equ}\\)'
+        img[i].replaceWith(new_tag)
+
 
 
 for i, element in enumerate(textbook_body):

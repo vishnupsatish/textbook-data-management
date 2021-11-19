@@ -7,6 +7,8 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="c49 c260" onload="frame_init()">
@@ -88,7 +90,7 @@
 <p class="c1"><span class="c104 c31">Theorem 1.1.1 (The Fundamental Principle of Counting a.k.a.  The “DIRECT” Approach)</span><span class="c87 c83 c104 c90"> </span></p>
 <p class="c1"><span>If we have a series of successive </span><span class="c31 c103">actions</span><span>, with </span><span class="c5 c39 c31">a </span><span class="c39 c31">outcomes</span><span> for the first action, </span><span class="c5 c39 c31">b</span><span class="c39 c31"> outcomes</span><span> for the second action, </span><span class="c5 c39 c31">c </span><span class="c39 c31">outcomes</span><span class="c0"> for the third action, and so on... then there are</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>        </span><img src="images/image1.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(a\times{}b\times{}c...\)</span></p>
 <p class="c1"><span class="c0">possible ways to perform the actions in total.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Proof</span><span class="c0">:</span></p>
@@ -161,30 +163,30 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c85 c31">Definition 1.2.1</span><span>  A </span><span class="c73 c31">set</span><span> is a defined collection/grouping of objects/concepts called </span><span class="c5">elements</span><span class="c0">.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>        E.g.         </span><img src="images/image2.png"/></p>
-<p class="c1"><span>                </span><img src="images/image3.png"/></p>
-<p class="c1"><span>                </span><img src="images/image4.png"/></p>
+<p class="c1"><span>        E.g.         </span><span class="mathjax-desmos">\(A=\left\{{1,2,5,7}\right\}\)</span></p>
+<p class="c1"><span>                </span><span class="mathjax-desmos">\(B=\left\{{Tony,Jason,LakeOntario,EiffelTower}\right\}\)</span></p>
+<p class="c1"><span>                </span><span class="mathjax-desmos">\(\aleph{}=\left\{{1,2,3,4,5,...}\right\}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">What you may notice is that the elements that comprise a set can be “anything".  Because of this, properties derived in the study of set theory can become very precarious to work with.  The notation for a set is usually denoted with an uppercase letter and its elements or conditions denoted with brace brackets.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>Graphically, sets are typically represented with</span><span class="c31"> Venn Diagrams</span><span>. For example, using the sets A and </span><img src="images/image5.png"/><span class="c0"> as defined above we get;</span></p>
-<p class="c1"><span class="c85 c31">Definition 1.2.2</span><span> The </span><span class="c73 c31">union</span><span> of two sets A and B is itself a set denoted, </span><img src="images/image6.png"/><span class="c0">,  which comprises all elements found in either A or B. </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 225.41px; height: 163.00px;"><img alt="" src="images/image513.png" style="width: 665.13px; height: 378.49px; margin-left: -216.17px; margin-top: -56.18px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 532.50px; height: 303.97px;"><img alt="" src="images/image627.png" style="width: 532.50px; height: 303.97px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
+<p class="c1"><span>Graphically, sets are typically represented with</span><span class="c31"> Venn Diagrams</span><span>. For example, using the sets A and </span><span class="mathjax-desmos">\(\aleph{}\)</span><span class="c0"> as defined above we get;</span></p>
+<p class="c1"><span class="c85 c31">Definition 1.2.2</span><span> The </span><span class="c73 c31">union</span><span> of two sets A and B is itself a set denoted, </span><span class="mathjax-desmos">\(\left({A\cup{}B}\right)\)</span><span class="c0">,  which comprises all elements found in either A or B. </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 225.41px; height: 163.00px;"><img alt="" src="images/image513.png" style="width: 665.13px; height: 378.49px; margin-left: -216.17px; margin-top: -56.18px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 532.50px; height: 303.97px;"><img alt="" src="images/image627.png" style="width: 532.50px; height: 303.97px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>For example, let </span><span class="c5">M</span><span> represent the set of letters that are used to spell ‘mathematics’, and </span><span class="c5">S</span><span class="c0"> represent the set of letters which are used to spell ‘science’:</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>        </span><img src="images/image7.png"/><span class="c38 c12">,</span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image8.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(M=\left\{{m,a,t,h,e,i,c,s}\right\}\)</span><span class="c38 c12">,</span></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(S=\left\{{s,c,i,e,n}\right\}\)</span></p>
 <p class="c1"><span class="c0">Then,</span></p>
-<p class="c1"><span>        </span><img src="images/image9.png"/><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 236.00px; height: 166.00px;"><img alt="" src="images/image535.png" style="width: 720.00px; height: 411.00px; margin-left: -76.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(\left({M\cup{}S}\right)=\left\{{m,a,t,h,e,i,c,s,n}\right\}\)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 236.00px; height: 166.00px;"><img alt="" src="images/image535.png" style="width: 720.00px; height: 411.00px; margin-left: -76.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c85 c31">Definition 1.2.3</span><span>  The </span><span class="c73 c31">intersection</span><span class="c0"> of two sets A and B consists of all elements common to both A and B.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>For example, observing the sets </span><span class="c5">M</span><span> and </span><span class="c5">S</span><span class="c0"> addressed above, we get:</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>        </span><img src="images/image10.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(\left({M\cap{}S}\right)=\left\{{s,c,i,e}\right\}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 229.00px; height: 171.23px;"><img alt="" src="images/image560.png" style="width: 720.00px; height: 407.56px; margin-left: -76.00px; margin-top: -23.03px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
@@ -192,17 +194,17 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>Once again referring to our running example, the complement of the set </span><span class="c5">M</span><span class="c0"> relative to the standard English alphabet would be:</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>        </span><img src="images/image11.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\({M}^{c}=\left\{{b,d,f,g,j,k,l,o,p,q,r,u,v,w,x,y,z}\right\}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c85 c31">Definition 1.2.5</span><span>  The </span><span class="c73 c31">cardinality</span><span> of a set </span><span class="c5">A</span><span>, denoted </span><img src="images/image12.png"/><span class="c0">, indicates the number of elements contained within the set.</span></p>
+<p class="c1"><span class="c85 c31">Definition 1.2.5</span><span>  The </span><span class="c73 c31">cardinality</span><span> of a set </span><span class="c5">A</span><span>, denoted </span><span class="mathjax-desmos">\(n(A)\)</span><span class="c0">, indicates the number of elements contained within the set.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">For example, we would get that:</span></p>
-<p class="c1"><span>        </span><img src="images/image13.png"/></p>
-<p class="c1"><span class="c12">        </span><img src="images/image14.png"/></p>
-<p class="c1"><span class="c12">        </span><img src="images/image15.png"/><span class="c12"> </span><span class="c0">and</span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image16.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(n(M)=8\)</span></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(n(S)=5\)</span></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(n({M}^{c})=18\)</span><span class="c12"> </span><span class="c0">and</span></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(n(M\cap{}S)=4\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">That’ll do for now, we’ll use this terminology at times throughout this section and the remainder of this course, however our main goal will remain to focus how one reasons through combinatorial problems, so let’s get back to it!</span></p>
 <h3 class="c25" id="h.5r9j0tg8si02"><span class="c77 c74 c31">When the Direct Approach Fails</span></h3>
@@ -229,7 +231,7 @@
 <p class="c1"><span class="c104 c31">Theorem 1.2.1 (Counting Mutually Exclusive Subsets a.k.a. The “CASES” Approach)</span></p>
 <p class="c1"><span>If a set of </span><span class="c39 c31">outcomes</span><span> can be separated into </span><span class="c31">cases (subsets)</span><span>; </span><span class="c5">A, B, C, ...</span><span>whereby the first case has </span><span class="c5 c31">n(A)</span><span> </span><span class="c31">total outcomes</span><span>, the second </span><span class="c5 c31">n(B)</span><span class="c31"> total outcomes</span><span class="c0">, and so on…  then there will be</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 346.38px; height: 208.50px;"><img alt="" src="images/image608.png" style="width: 556.68px; height: 296.53px; margin-left: -64.95px; margin-top: -28.57px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>        </span><img src="images/image17.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(n(S)=n(A)+n(B)+...\)</span></p>
 <p class="c1"><span class="c0">total possible outcomes in the set.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c73 c263 c88 c83 c90"></span></p>
@@ -297,9 +299,9 @@
 <p class="c1"><span class="c104 c31">Theorem 1.2.2 (Complementary Outcomes ak.a. The “INDIRECT” Approach)</span></p>
 <p class="c1"><span>If a set of </span><span class="c39 c31">outcomes</span><span> (S) contains a subset of outcomes (A), then the number of elements that are part of set A and the number of elements that are not in the set A (labelled A</span><span class="c92">c</span><span class="c0">), we have that;</span></p>
 <p class="c1"><span class="c38 c12">        </span></p>
-<p class="c1 c95"><img src="images/image18.png"/><span class="c12">,         </span><span>where </span><span class="c5">n</span><span class="c0"> represents the number of elements in each set.</span></p>
+<p class="c1 c95"><span class="mathjax-desmos">\(n(S)=n(A)+n({A}^{c})\)</span><span class="c12">,         </span><span>where </span><span class="c5">n</span><span class="c0"> represents the number of elements in each set.</span></p>
 <p class="c1"><span class="c0">Alternatively, we can write this as;</span></p>
-<p class="c1"><span>        </span><img src="images/image19.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(n(A)=n(S)-n({A}^{c})\)</span></p>
 <p class="c1"><span class="c0">            GOOD    ＝   TOTAL   −      BAD</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <h3 class="c25" id="h.g00q4n5wgfbb"><span class="c77 c74 c31">A Summary of the Three Major Counting Approaches</span></h3>
@@ -341,7 +343,7 @@
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_xahm5gwn9qry-0" start="11"><li class="c10 li-bullet-0"><span>Prove </span><span class="c104 c31">Theorem 1.2.3 (Counting Complementary Sets a.k.a. The “INDIRECT” Approach).</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_xahm5gwn9qry-0" start="12"><li class="c10 li-bullet-0"><span>On the real line, place n white pegs at positions 1, 2, 3, ..., n and n blue pegs at positions -1, -2, ..., n (0 is left open).  White pegs can only move to the left, while blues only to the right.  When beside an open position, a peg may move one unit to occupy that position.  If a peg of one colour is in front of a peg of the other colour that is followed by an open position, a peg may jump two units to the open position.  By a sequence of these two types of moves (not necessarily alternating between white and blue pegs), one seeks to get the positions of the white and blue pegs interchanged. Prove, using a combinatorial argument, that in general you will require </span><img src="images/image20.png"/><span class="c0"> moves to complete the game.</span></li></ol>
+<ol class="c30 lst-kix_xahm5gwn9qry-0" start="12"><li class="c10 li-bullet-0"><span>On the real line, place n white pegs at positions 1, 2, 3, ..., n and n blue pegs at positions -1, -2, ..., n (0 is left open).  White pegs can only move to the left, while blues only to the right.  When beside an open position, a peg may move one unit to occupy that position.  If a peg of one colour is in front of a peg of the other colour that is followed by an open position, a peg may jump two units to the open position.  By a sequence of these two types of moves (not necessarily alternating between white and blue pegs), one seeks to get the positions of the white and blue pegs interchanged. Prove, using a combinatorial argument, that in general you will require </span><span class="mathjax-desmos">\(\left({{n}^{2}+2n}\right)\)</span><span class="c0"> moves to complete the game.</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -370,15 +372,15 @@
 <p class="c1"><span class="c64">{</span><span class="c64 c121">Anton</span><span class="c64">, Doret, </span><span class="c64 c121">Fong</span><span class="c64">, </span><span class="c64 c121">Hamilton</span><span class="c64">, Lee, Raybould, Reka-Isaj, </span><span class="c64 c121">Tan</span><span class="c64">, B. Williams, </span><span class="c64 c121">Wyman-McCarthy</span><span class="c38 c64">} </span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>It is evident that if we were to consider the two departments as </span><span class="c31">CASES</span><span class="c0">, then out conclusion would be;        </span></p>
-<p class="c1"><span>        </span><img src="images/image21.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(TotalOutcomes=n(M)+n(S)=13+10=23\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>This would clearly not work though as we’re </span><span class="c31">overcounting</span><span> those members who belong to both departments (highlighted in </span><span class="c121">yellow</span><span>); specifically each of these elements were counted </span><span class="c31">twice</span><span class="c0">.</span></p>
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 382.20px; height: 233.32px;"><img alt="" src="images/image580.png" style="width: 463.61px; height: 267.82px; margin-left: -39.82px; margin-top: -11.97px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>Thus, to compensate for </span><span class="c31">overlapping CASES</span><span> such as this, we can subtract off the instances of members who belong to both departments (i.e. in the </span><span class="c31">intersection</span><span> of </span><span class="c5">M</span><span> and </span><span class="c5">P</span><span>) </span><span class="c0">giving us;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><img src="images/image22.png"/></p>
-<p class="c1"><img src="images/image23.png"/></p>
+<p class="c1"><span class="mathjax-desmos">\(TotalOutcomes=n(M)+n(P)-n\left({M\cap{}P}\right)\)</span></p>
+<p class="c1"><span class="mathjax-desmos">\(TotalOutcomes=13+10-5=18\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Thus, there are 18 teachers either in the Mathematics and Engineering or the Physical Sciences departments.</span></p>
 <p class="c35"><span>⬛</span></p>
@@ -386,15 +388,15 @@
 <p class="c1"><span>We move to generalize the approach taken to deal with </span><span class="c31">overlapping cases</span><span class="c0"> in the theorem which follows:</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c104 c31">Theorem 1.3.1 (The Principle of Inclusion and Exclusion)</span></p>
-<p class="c1"><span>Given two sets </span><span class="c5">A</span><span> and </span><span class="c5">B</span><span>, the cardinality of their </span><span class="c31">union</span><span>, </span><img src="images/image6.png"/><span class="c0">, is given by;</span></p>
-<p class="c1"><span>        </span><img src="images/image24.png"/></p>
+<p class="c1"><span>Given two sets </span><span class="c5">A</span><span> and </span><span class="c5">B</span><span>, the cardinality of their </span><span class="c31">union</span><span>, </span><span class="mathjax-desmos">\(\left({A\cup{}B}\right)\)</span><span class="c0">, is given by;</span></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(n\left({A\cup{}B}\right)=n(A)+n(B)-n\left({A\cap{}B}\right)\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Proof</span><span class="c0">:</span></p>
 <p class="c1"><span class="c0">We’ll work with a visually based argument here to hopefully assist in understanding of this approach.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 554.80px; height: 349.00px;"><img alt="" src="images/image501.png" style="width: 720.45px; height: 392.20px; margin-left: -84.20px; margin-top: -21.79px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
-<p class="c1"><span>As </span><img src="images/image25.png"/><span> is counted twice we subtract off this “slice" from either </span><span class="c5">n(A)</span><span> or </span><span class="c5">n(B)</span><span> to compensate, leaving us each region of </span><img src="images/image6.png"/><span class="c0"> only counted one time and thus giving us the desired relationship,</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 257.80px; height: 155.65px;"><img alt="" src="images/image635.png" style="width: 315.04px; height: 171.39px; margin-left: -28.79px; margin-top: -8.31px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
-<p class="c1"><span>        </span><img src="images/image26.png"/><img src="images/image12.png"/><img src="images/image27.png"/><img src="images/image28.png"/><img src="images/image29.png"/><img src="images/image25.png"/></p>
+<p class="c1"><span>As </span><span class="mathjax-desmos">\(n\left({A\cap{}B}\right)\)</span><span> is counted twice we subtract off this “slice" from either </span><span class="c5">n(A)</span><span> or </span><span class="c5">n(B)</span><span> to compensate, leaving us each region of </span><span class="mathjax-desmos">\(\left({A\cup{}B}\right)\)</span><span class="c0"> only counted one time and thus giving us the desired relationship,</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 257.80px; height: 155.65px;"><img alt="" src="images/image635.png" style="width: 315.04px; height: 171.39px; margin-left: -28.79px; margin-top: -8.31px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(n(A\cup{}B)=\)</span><span class="mathjax-desmos">\(n(A)\)</span><span class="mathjax-desmos">\(+\)</span><span class="mathjax-desmos">\(n(B)\)</span><span class="mathjax-desmos">\(-\)</span><span class="mathjax-desmos">\(n\left({A\cap{}B}\right)\)</span></p>
 <p class="c35"><span>⬛</span></p>
 <p class="c1"><span class="c39 c31">Example 1.3.2</span></p>
 <p class="c1"><span>A researcher is observing a collection of insects for two genetic characteristics, labelled as </span><span class="c5">x</span><span> and </span><span class="c5">y</span><span>.  In total 100 insects were examined.  Every insect has either </span><span class="c5">x</span><span> or </span><span class="c5">y</span><span> or both, but the researcher cannot determine directly whether an insect has characteristic </span><span class="c5">y</span><span> alone.  She finds that 48 insects have </span><span class="c5">x</span><span> and 23 have both </span><span class="c5">x</span><span> and </span><span class="c5">y</span><span class="c0">.  Given this information, determine:</span></p>
@@ -403,9 +405,9 @@
 <p class="c1"><span class="c73">Solution</span><span class="c0">: (Cases)</span></p>
 <ol class="c30 lst-kix_a16c2ya62hga-0 start" start="1"><li class="c10 li-bullet-0"><span>We’ll let </span><span class="c5">X</span><span> represent the set of insects with trait </span><span class="c5">x</span><span>, and </span><span class="c5">Y</span><span> represent the set of insects with trait </span><span class="c5">y</span><span class="c0">.</span></li></ol>
 <p class="c18"><span class="c0">Since every insect exhibits x or y then we can deduce that;</span></p>
-<p class="c18"><span class="c12">  </span><img src="images/image30.png"/></p>
-<p class="c18"><span class="c12">                           </span><img src="images/image31.png"/></p>
-<p class="c18"><span class="c12">                </span><img src="images/image32.png"/></p>
+<p class="c18"><span class="c12">  </span><span class="mathjax-desmos">\(n(X\cup{}Y)=100=n(X)+n(Y)-n(X\cap{}Y)\)</span></p>
+<p class="c18"><span class="c12">                           </span><span class="mathjax-desmos">\(100=48+n(Y)-23\)</span></p>
+<p class="c18"><span class="c12">                </span><span class="mathjax-desmos">\(n(Y)=100-48+23=75\)</span></p>
 <p class="c18"><span>Thus, 75 of the insects exhibit characteristic </span><span class="c5">y</span><span class="c0">.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_a16c2ya62hga-0" start="2"><li class="c10 li-bullet-0"><span>It is sometimes useful to solve the </span><span class="c31">CASES approach</span><span> “graphically", especially when we have overlapping cases.  To do this, we’ll employ a Venn diagram with each set representing one of the cases, then work </span><span class="c31">from the inside outward</span><span> to label the number of </span><span class="c39 c31">outcomes</span><span class="c0"> in each ‘region’ of the diagram.</span></li></ol>
@@ -475,7 +477,7 @@
 <ol class="c30 lst-kix_jxs2mj6notnz-0" start="4"><li class="c10 li-bullet-0"><span>Of the 30 students in the </span><span class="c5">Health &amp; Wellness</span><span> </span><span class="c5">SHSM</span><span class="c0"> at our school, there are twice as many students with dark hair as there are with blue eyes, 6 students with dark hair also have blue eyes, and there are 3 students with neither dark hair nor blue eyes.  How many students have blue eyes?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c5">Studies</span></p>
-<ol class="c30 lst-kix_jxs2mj6notnz-0" start="5"><li class="c10 li-bullet-0"><span>Derive the Principle of Inclusion and Exclusion for three sets </span><span class="c5">A, B, </span><span>and </span><span class="c5">C</span><span>.  Specifically, determine a method of determining the cardinality of the union of the three sets </span><img src="images/image33.png"/><span class="c0">.</span></li></ol>
+<ol class="c30 lst-kix_jxs2mj6notnz-0" start="5"><li class="c10 li-bullet-0"><span>Derive the Principle of Inclusion and Exclusion for three sets </span><span class="c5">A, B, </span><span>and </span><span class="c5">C</span><span>.  Specifically, determine a method of determining the cardinality of the union of the three sets </span><span class="mathjax-desmos">\(n\left({A\cup{}B\cup{}C}\right)\)</span><span class="c0">.</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_jxs2mj6notnz-0" start="6"><li class="c10 li-bullet-0"><span class="c0">At the Gooddog Obedience School, dogs can learn to do three tricks:  sit, stay, and roll over.  Of the dogs at the school:</span></li></ol>
 <p class="c18"><span class="c0">        50 dogs can sit                        17 dogs can sit and stay</span></p>
@@ -519,11 +521,11 @@
 <p class="c1"><span class="c0">Thus, there are 3 628 800 possible batting orders for this team!</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>A product such as </span><img src="images/image34.png"/><span class="c0"> is a common occurrence in combinatorics and so a special type of notation has evolved to denote it;</span></p>
+<p class="c1"><span>A product such as </span><span class="mathjax-desmos">\(10\times{}9\times{}8\times{}...\times{}2\times{}1\)</span><span class="c0"> is a common occurrence in combinatorics and so a special type of notation has evolved to denote it;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c85 c31">Definition 1.4.1</span></p>
-<p class="c1"><span>Given a </span><span class="c31">natural number</span><span> </span><img src="images/image35.png"/><span>, we define </span><span class="c73 c5 c31">n</span><span class="c73 c31">-factorial</span><span class="c0"> as the product;</span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image36.png"/></p>
+<p class="c1"><span>Given a </span><span class="c31">natural number</span><span> </span><span class="mathjax-desmos">\(n\in{}\aleph{}\)</span><span>, we define </span><span class="c73 c5 c31">n</span><span class="c73 c31">-factorial</span><span class="c0"> as the product;</span></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(n!=n\left({n-1}\right)\left({n-2}\right)\cdot{}\cdot{}\cdot{}\left({2}\right)\left({1}\right)\)</span></p>
 <p class="c1 c2"><span class="c38 c12"></span></p>
 <p class="c1"><span>What is important here however is that when using factorial notation, we always keep our mind’s eye on the idea that this generally represents the </span><span class="c31">arrangement of n-objects</span><span class="c0">.  The power of the notation is that it allows us to display a solution in a more concise manner avoiding long chains of multiplication which could take away from an effective presentation of your argument.  Let’s see this notation in another problem;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -549,7 +551,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">The product shown above greatly resembles a ‘factorial’ type of expression but is incomplete. With this in mind, we can use factorials to express this type of product as shown below:</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><img/></p>
+<p class="c1"><span class="mathjax-desmos">\(15\times{}14\times{}13=\frac{15\times{}14\times{}13\times{}12\times{}\cdot{}\cdot{}\cdot{}\times{}2\times{}1}{12\times{}\cdot{}\cdot{}\cdot{}\times{}2\times{}1}=\frac{15!}{12!}=\frac{15!}{\left({15-3}\right)!}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>Again, as this type of situation arises with great frequency, a notation is warranted, namely that of a </span><span class="c31">permutation</span><span class="c0"> defined as follows:</span></p>
@@ -558,26 +560,26 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c85 c31">Definition 1.4.2</span></p>
 <p class="c1"><span>A arrangement of </span><span class="c5">r</span><span> objects taken from a collection of </span><span class="c5">n</span><span> objects total is called a </span><span class="c73 c31">permutation</span><span class="c0"> and is given by the expression;</span></p>
-<p class="c1"><span>        </span><img src="images/image37.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\({}_{n}{P}_{r}=\frac{n!}{\left({n-r}\right)!}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">As with factorial notation, the permutation notation will greatly aid us in an effort to clearly present a combinatorial argument.  Of interest however is a special consequence of these definitions.</span></p>
 <p class="c1 c2"><span class="c87 c104 c90 c31"></span></p>
 <p class="c1 c2"><span class="c87 c104 c90 c31"></span></p>
 <p class="c1"><span class="c104 c31">Theorem 1.4.1 (Zero Factorial)</span></p>
-<p class="c1"><span>Prove that </span><img src="images/image38.png"/><span class="c0">.</span></p>
+<p class="c1"><span>Prove that </span><span class="mathjax-desmos">\(0!=1\)</span><span class="c0">.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Proof</span><span class="c0">:</span></p>
 <p class="c1"><span>Consider the number of ways can we arrange </span><span class="c5">n</span><span> objects taken from a collection of </span><span class="c5">n</span><span class="c0"> total objects. </span></p>
 <ol class="c30 lst-kix_9uqmapis3uns-0 start" start="1"><li class="c10 li-bullet-0"><span class="c0">Intuitively, this problem should make you think of the batting lineup example encountered earlier in this section.  Thus we know that the number of ways one could arrange these objects is given by the expression;</span></li></ol>
-<p class="c18"><span>        </span><img src="images/image39.png"/></p>
+<p class="c18"><span>        </span><span class="mathjax-desmos">\(n!\)</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_9uqmapis3uns-0" start="2"><li class="c10 li-bullet-0"><span>Using the concept of a </span><span class="c31">permutation</span><span class="c0"> we get;</span></li></ol>
-<p class="c18"><span>        </span><img src="images/image40.png"/></p>
+<p class="c18"><span>        </span><span class="mathjax-desmos">\({}_{n}{P}_{n}=\frac{n!}{\left({n-n}\right)!}=\frac{n!}{0!}\)</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Considering that these two results should yield the same result we can equate them yielding;</span></p>
-<p class="c1"><span>        </span><img src="images/image41.png"/></p>
-<p class="c1"><span class="c65">⇒        </span><img src="images/image42.png"/></p>
-<p class="c1"><span class="c65">⇒        </span><img src="images/image38.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(n!={}_{n}{P}_{n}=\frac{n!}{0!}\)</span></p>
+<p class="c1"><span class="c65">⇒        </span><span class="mathjax-desmos">\(n!=\frac{n!}{0!}\)</span></p>
+<p class="c1"><span class="c65">⇒        </span><span class="mathjax-desmos">\(0!=1\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">For the exercises that follow, try to employ factorial and permutation notation whilst constructing your solutions as this will help you both become more familiarized with the notations as well as be able to read through many combinatorial arguments.</span></p>
@@ -587,7 +589,7 @@
 <h4 class="c80 c48" id="h.vnlrpqqvagoe"><span class="c53 c31">Practice 1.4</span></h4>
 <p class="c29"><span class="c5">Technique</span></p>
 <ol class="c30 lst-kix_jt3qm1xu9we4-0 start" start="1"><li class="c19 li-bullet-0"><span class="c0">Simplify the following expressions without the use of a calculator:</span></li></ol>
-<ol class="c30 lst-kix_xteemd9xtavo-0 start" start="1"><li class="c19 li-bullet-0"><span> </span><img src="images/image43.png"/></li><li class="c19 li-bullet-0"><span> </span><img src="images/image44.png"/></li><li class="c19 li-bullet-0"><span> </span><img src="images/image45.png"/></li><li class="c19 li-bullet-0"><span> </span><img src="images/image46.png"/></li><li class="c19 li-bullet-0"><span> </span><img src="images/image47.png"/></li></ol>
+<ol class="c30 lst-kix_xteemd9xtavo-0 start" start="1"><li class="c19 li-bullet-0"><span> </span><span class="mathjax-desmos">\(\frac{9!}{5!}\)</span></li><li class="c19 li-bullet-0"><span> </span><span class="mathjax-desmos">\(\frac{12!}{3!\left({12-3}\right)!}\)</span></li><li class="c19 li-bullet-0"><span> </span><span class="mathjax-desmos">\(18\cdot{}17!\)</span></li><li class="c19 li-bullet-0"><span> </span><span class="mathjax-desmos">\(n\cdot{}\left({n-1}\right)!\)</span></li><li class="c19 li-bullet-0"><span> </span><span class="mathjax-desmos">\(\frac{n!}{\left({n-2}\right)!}\)</span></li></ol>
 <p class="c69 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_jt3qm1xu9we4-0" start="2"><li class="c19 li-bullet-0"><span class="c0">Determine the number of 4-letter permutations using the letters that spell:</span></li></ol>
 <ol class="c30 lst-kix_1l60wa7hm4vb-0 start" start="1"><li class="c19 li-bullet-0"><span class="c0">GRADE</span></li><li class="c19 li-bullet-0"><span class="c0">POLICE</span></li></ol>
@@ -599,7 +601,7 @@
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c5">Studies</span></p>
 <ol class="c30 lst-kix_jt3qm1xu9we4-0" start="5"><li class="c10 li-bullet-0"><span>Solve for </span><span class="c5">n</span><span class="c0"> in each of the following equations:</span></li></ol>
-<ol class="c30 lst-kix_7w6f923gyjx9-0 start" start="1"><li class="c10 li-bullet-0"><span> </span><img src="images/image48.png"/></li><li class="c10 li-bullet-0"><span> </span><img src="images/image49.png"/></li><li class="c10 li-bullet-0"><span> </span><img src="images/image50.png"/></li></ol>
+<ol class="c30 lst-kix_7w6f923gyjx9-0 start" start="1"><li class="c10 li-bullet-0"><span> </span><span class="mathjax-desmos">\(n!=42\left({n-2}\right)!\)</span></li><li class="c10 li-bullet-0"><span> </span><span class="mathjax-desmos">\(\frac{\left({n+1}\right)!}{\left({n-1}\right)!}=20\)</span></li><li class="c10 li-bullet-0"><span> </span><span class="mathjax-desmos">\({}_{2n}{P}_{3}=2\left({{}_{n}{P}_{4}}\right)\)</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_jt3qm1xu9we4-0" start="6"><li class="c10 li-bullet-0"><span class="c0">How many five-letter arrangements of the word STEVIN can be formed if either one vowel is used or E is to precede I?</span></li></ol>
 <p class="c18 c2"><span class="c0"></span></p>
@@ -693,7 +695,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span> Clearly, without the subscripts, it is evident that we’re </span><span class="c31">overcounting</span><span>.  Specifically,</span><span class="c0"> we’re counting each outcome twice. To compensate for this we can make a simple adjustment and divide by 2 (or more precisely 2! as this is the number of ways the two ‘Bs’ could be arranged in each unique outcome). Thus our solution becomes,</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c147 c48"><img src="images/image51.png"/></p>
+<p class="c147 c48"><span class="mathjax-desmos">\(\frac{4!}{2!}=12\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">We can extend this idea further to where we have multiple repeated elements to work with as shown in the next example.</span></p>
@@ -709,13 +711,13 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Thus we’ll have to divide out to compensate for the repetitious counting giving us,</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c147 c48"><img src="images/image52.png"/></p>
+<p class="c147 c48"><span class="mathjax-desmos">\(\frac{11!}{2!\cdot{}4!\cdot{}2!}=415800\)</span></p>
 <p class="c1"><span>                                                                             </span><span class="c38 c64">I’s       S’s      A’s</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.kf5jg6tscysz"><span class="c104">Theorem 1.6.1 (Counting Arrangements with Symmetries)</span></p>
 <p class="c1"><span>In general, if we are arranging </span><span class="c5">n-</span><span>objects with </span><span class="c5 c31">a</span><span> identical objects of one type, </span><span class="c5 c31">b</span><span> identical objects of a second type, </span><span class="c5 c31">c</span><span class="c0"> of a third type, and so on... then there will be</span></p>
-<p class="c147 c48"><img src="images/image53.png"/></p>
+<p class="c147 c48"><span class="mathjax-desmos">\(\frac{n!}{a!\cdot{}b!\cdot{}c!\cdot{}\cdot{}\cdot{}}\)</span></p>
 <p class="c1"><span class="c0">total arrangements of the objects.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Proof</span><span class="c0">:</span></p>
@@ -740,7 +742,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>After rotation, we see that the numbers seem to be arranged differently, but if you tilt your head we effectively see that we have the same arrangement.  Thus, any arrangement that we can devise of these numbers have a </span><span class="c31">rotational symmetry</span><span class="c0">, and so we’re overcounting again, this time by a factor of 12. To compensate we again divide by this factor yielding;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c147 c48"><img src="images/image54.png"/></p>
+<p class="c147 c48"><span class="mathjax-desmos">\(\frac{12!}{12}=39916800\)</span></p>
 <p class="c1"><span class="c0">arrangements.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -753,7 +755,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Since we’ve eliminated any rotational symmetries we can now arrange the other numbers freely giving us </span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><img src="images/image55.png"/></p>
+<p class="c1"><span class="mathjax-desmos">\(11!=39916800\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0"> arrangements.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -810,7 +812,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>It is clear that we’ve exposed a </span><span class="c31">symmetry</span><span> in that we repeatedly form the same group using differently ordered selections.  In essence, we should realize that we are not concerned with </span><span class="c5">how the group is selected</span><span> but rather </span><span class="c5">who will comprise the group</span><span class="c0">.  Using methods shown in the previous section we divide our result by the constant factor by which we can establish the same group, namely that there are 3! ways to select the same group from the set of 20 overall. Thus our result is:</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">                </span><img src="images/image56.png"/></p>
+<p class="c1"><span class="c65">                </span><span class="mathjax-desmos">\(\frac{{}_{20}{P}_{3}}{3!}=1140\)</span></p>
 <p class="c1"><span class="c0">possible selections.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -820,7 +822,7 @@
 <p class="c147 c48 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.r4ej9pevfzwp"><span class="c87 c85 c90 c31">Definition 1.7.1 (Combinations)</span></p>
 <p class="c1"><span>A </span><span class="c31">combination</span><span> of </span><span class="c5">r-</span><span>objects selected without regard to order from a total of </span><span class="c5">n-</span><span class="c0">objects total is notated by:</span></p>
-<p class="c147 c48"><span>        </span><img src="images/image57.png"/><span>(Read “</span><span class="c5">n choose r”</span><span class="c0">)</span></p>
+<p class="c147 c48"><span>        </span><span class="mathjax-desmos">\({}_{n}{C}_{r}=\frac{{}_{n}{P}_{r}}{r!}\)</span><span>(Read “</span><span class="c5">n choose r”</span><span class="c0">)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Alternatively, we’ll use the alternate notations:</span></p>
 <p class="c1"><span class="c0">The use of these alternatives is somewhat inconsistent amongst standard textbooks.  It’s important to be reminded that these mean the same thing.  We’ll use the first two formats interchangeably depending on the aesthetics of the presented solution.</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 301.50px; height: 80.66px;"><img alt="" src="images/image629.png" style="width: 301.50px; height: 80.66px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
@@ -862,9 +864,9 @@
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_a9gztxcf1nxn-0" start="5"><li class="c10 li-bullet-0"><span class="c0">There are 25 people at a gathering.  If everyone at the gathering shakes hands with everyone else, how many hand-shakes occur during the evening? (Assume that no one shakes their own hand.)</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_a9gztxcf1nxn-0" start="6"><li class="c10 li-bullet-0"><span>a) Show that </span><img src="images/image58.png"/><span class="c0"> Why does this result make intuitive sense?</span></li></ol>
-<p class="c36"><span>                b) Show that </span><img src="images/image59.png"/><span class="c0">.  Why does this result make intuitive sense?</span></p>
-<p class="c36"><span>                c)  Show that </span><img src="images/image60.png"/><span class="c0">.  Explain in a non-algebraic way why this must be true.</span></p>
+<ol class="c30 lst-kix_a9gztxcf1nxn-0" start="6"><li class="c10 li-bullet-0"><span>a) Show that </span><span class="mathjax-desmos">\({}_{n}{C}_{0}={}_{n}{C}_{n}.\)</span><span class="c0"> Why does this result make intuitive sense?</span></li></ol>
+<p class="c36"><span>                b) Show that </span><span class="mathjax-desmos">\({}_{n}{C}_{1}={}_{n}{C}_{n-1}\)</span><span class="c0">.  Why does this result make intuitive sense?</span></p>
+<p class="c36"><span>                c)  Show that </span><span class="mathjax-desmos">\({}_{n}{C}_{r}={}_{n}{C}_{n-r}\)</span><span class="c0">.  Explain in a non-algebraic way why this must be true.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36"><span>        </span><span class="c5">Studies</span></p>
 <ol class="c30 lst-kix_a9gztxcf1nxn-0" start="7"><li class="c10 li-bullet-0"><span class="c0">Consider the following ‘Alternate Solution’ to example 1.6.3;</span></li></ol>
@@ -907,7 +909,7 @@
 <p class="c1"><span class="c0">The above example alludes to a more generalized property which is stated below.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.ldeyogmix5ic"><span class="c87 c104 c90 c31">Theorem 1.8.1 (Subsets)</span></p>
-<p class="c29"><span>Given </span><img src="images/image35.png"/><span>, there are 2</span><span class="c92">n</span><span> total subsets of a set which consists of </span><span class="c5">n</span><span class="c0"> elements.</span></p>
+<p class="c29"><span>Given </span><span class="mathjax-desmos">\(n\in{}\aleph{}\)</span><span>, there are 2</span><span class="c92">n</span><span> total subsets of a set which consists of </span><span class="c5">n</span><span class="c0"> elements.</span></p>
 <p class="c29 c2"><span class="c0"></span></p>
 <p class="c29"><span class="c73">Proof</span><span class="c0">:</span></p>
 <p class="c29"><span class="c0">Given in the practice.  </span></p>
@@ -935,7 +937,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.hxvd33lp3qc6"><span class="c87 c104 c90 c31">Theorem 1.8.2 (Counting Subsets containing Identical Elements)</span></p>
 <p class="c29"><span>The number of subgroups that can be formed from a total collection of objects which include; </span><span class="c5">a</span><span> of one type of object, </span><span class="c5">b</span><span> of another type, </span><span class="c5">c</span><span class="c0"> of yet another type, and so on… is given by</span></p>
-<p class="c29"><span>        </span><img src="images/image61.png"/></p>
+<p class="c29"><span>        </span><span class="mathjax-desmos">\(\left({a+1}\right)\times{}\left({b+1}\right)\times{}\left({c+1}\right)\times{}...\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Proof</span><span class="c0">:</span></p>
 <p class="c1"><span class="c0">Once again, the proof of this result is left to you, but will largely follow the reasoning of the total cases from the example above.</span></p>
@@ -1010,7 +1012,7 @@
 <p class="c29"><span class="c5">Technique</span></p>
 <ol class="c30 lst-kix_wgq8emeeb6wr-0 start" start="1"><li class="c19 li-bullet-0"><span class="c0">Determine the number of ways we can distribute 10 identical red balls into 3 distinct boxes, where empty boxes are allowed.</span></li></ol>
 <p class="c69 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_wgq8emeeb6wr-0" start="2"><li class="c19 li-bullet-0"><span>a) Determine the number of solutions to the equation </span><img src="images/image62.png"/><span class="c0">.</span></li></ol>
+<ol class="c30 lst-kix_wgq8emeeb6wr-0" start="2"><li class="c19 li-bullet-0"><span>a) Determine the number of solutions to the equation </span><span class="mathjax-desmos">\(x+y+z=35;x,y,z\in{}\aleph{}\)</span><span class="c0">.</span></li></ol>
 <p class="c41"><span>b) Determine the number of solutions to the above equation if </span><span class="c5">z</span><span class="c0"> must even.</span></p>
 <p class="c69 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_wgq8emeeb6wr-0" start="3"><li class="c10 li-bullet-0"><span class="c0">How many ways are there to distribute four identical oranges and six distinct apples (each a different variety) into ve distinct boxes?</span></li></ol>
@@ -1041,7 +1043,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.7j09kv50du70"><span class="c87 c104 c90 c31">Property 1: (Relationship to Combinations)</span></p>
 <p class="c1"><span class="c0">Each term of the Pascal’s Triangle is equivalent to the corresponding combination in the following manner;</span></p>
-<p class="c147 c48"><img src="images/image63.png"/></p>
+<p class="c147 c48"><span class="mathjax-desmos">\({t}_{n,r}={}_{n}{C}_{r}\)</span></p>
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 312.00px; height: 181.81px;"><img alt="" src="images/image631.png" style="width: 312.00px; height: 181.81px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 312.00px; height: 185.00px;"><img alt="" src="images/image599.png" style="width: 312.00px; height: 209.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -1063,11 +1065,11 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.e9ni7z4bx43g"><span class="c87 c104 c90 c31">Property 3: (Symmetry of the Pascal’s Triangle)</span></p>
 <p class="c1"><span class="c0">For each row of the Pascal’s Triangle we have that;</span></p>
-<p class="c147 c48"><img src="images/image64.png"/><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 370.50px; height: 255.16px;"><img alt="" src="images/image596.png" style="width: 370.50px; height: 255.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
+<p class="c147 c48"><span class="mathjax-desmos">\({t}_{n,r}={t}_{n,n-r}\)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 370.50px; height: 255.16px;"><img alt="" src="images/image596.png" style="width: 370.50px; height: 255.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 subtitle" id="h.vfpksdkn5fmc"><span class="c87 c104 c90 c31">Property 4:  (Alternating Sums and Differences of Pascal’s Triangle)</span></p>
 <p class="c1"><span>The </span><span class="c5">n</span><span class="c5 c92">th</span><span class="c0"> row of the Pascal’s Triangle has the property that:</span></p>
-<p class="c1"><span>        </span><img src="images/image65.png"/></p>
-<p class="c1"><span class="c65">        </span><img src="images/image66.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\({t}_{n,0}+{t}_{n,1}-{t}_{n,2}+...+{\left({-1}\right)}^{n+1}{t}_{n,n}=1;ifniseven\)</span></p>
+<p class="c1"><span class="c65">        </span><span class="mathjax-desmos">\({t}_{n,0}+{t}_{n,1}-{t}_{n,2}+...+{\left({-1}\right)}^{n+1}{t}_{n,n}=0;ifnisodd\)</span></p>
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 562.50px; height: 260.02px;"><img alt="" src="images/image652.png" style="width: 562.50px; height: 260.02px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.usq39cmqkyd7"><span class="c87 c104 c90 c31">Property 5: (Diagonals of the Pascal’s Triangle)</span></p>
@@ -1105,7 +1107,7 @@
 <p class="c1"><span class="c73">Solution</span><span class="c0">: (Direct Approach)</span></p>
 <p class="c1"><span>Since Cameron must always travel 3 blocks North and 5 blocks East, we can think of his chosen path as a series of </span><span class="c31">8 moves</span><span class="c0"> that must include an  arrangement of 3 Ns (moves North) and 5 Es (moves East), yielding;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">                </span><img src="images/image67.png"/></p>
+<p class="c1"><span class="c65">                </span><span class="mathjax-desmos">\(\frac{8!}{3!5!}=56\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>ways of arriving at Dylan’s place.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -1113,7 +1115,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Alternate Solution</span><span class="c0">:  (Direct Approach)</span></p>
 <p class="c1"><span class="c0">Using a similar reasoning with Cameron making 8 moves of which 3 must be North (or 5 moves East); we have that we must choose which three of the eight moves (i.e. first, second, etc.) will be made to the North (5 moves to the East) giving us;</span></p>
-<p class="c1"><span class="c65">                </span><img src="images/image68.png"/><span class="c65">        or        </span><img src="images/image69.png"/></p>
+<p class="c1"><span class="c65">                </span><span class="mathjax-desmos">\({}_{8}{C}_{3}=56\)</span><span class="c65">        or        </span><span class="mathjax-desmos">\({}_{8}{C}_{5}=56\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -1149,18 +1151,18 @@
 <p class="c36"><span>        </span><hr style="page-break-before:always;display:none;"/></p>
 <p class="c36 c95"><span class="c5">Studies</span></p>
 <ol class="c30 lst-kix_wsm6gr5lza7k-0" start="5"><li class="c10 li-bullet-0"><span class="c0">Devise combinatorial arguments (i.e. non-algebraic arguments) to prove:</span></li></ol>
-<p class="c36 c95"><span>        </span><span class="c104 c31">Property 1 (Relationship to Combinations)</span><span>; </span><span class="c12"> </span><img src="images/image63.png"/><span class="c0">.</span></p>
+<p class="c36 c95"><span>        </span><span class="c104 c31">Property 1 (Relationship to Combinations)</span><span>; </span><span class="c12"> </span><span class="mathjax-desmos">\({t}_{n,r}={}_{n}{C}_{r}\)</span><span class="c0">.</span></p>
 <p class="c1 c95 c2"><span class="c0"></span></p>
-<p class="c1 c95"><span class="c104 c31">Property 2 (Rows of the Pascal’s Triangle)</span><span>;  </span><img src="images/image70.png"/><span class="c38 c12">.</span></p>
+<p class="c1 c95"><span class="c104 c31">Property 2 (Rows of the Pascal’s Triangle)</span><span>;  </span><span class="mathjax-desmos">\(\sum\limits_{r=0}^{n}{t}_{n,r}={2}^{n}\)</span><span class="c38 c12">.</span></p>
 <p class="c1 c95 c2"><span class="c0"></span></p>
-<p class="c1 c95"><span class="c104 c31">Property 3 (Symmetry of Pascal’s Triangle)</span><span>;  </span><img src="images/image64.png"/><span class="c0">.</span></p>
+<p class="c1 c95"><span class="c104 c31">Property 3 (Symmetry of Pascal’s Triangle)</span><span>;  </span><span class="mathjax-desmos">\({t}_{n,r}={t}_{n,n-r}\)</span><span class="c0">.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_wsm6gr5lza7k-0" start="6"><li class="c10 li-bullet-0"><span class="c0">Suppose we have 5 sets of brackets (i.e. 5 left brackets and 5 right brackets).  How many arrangements of the brackets make “logical” sense?  For example, ‘(())()(())’ would make logical sense while ‘)((())(())’ would not.</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_wsm6gr5lza7k-0" start="7"><li class="c10 li-bullet-0"><span class="c0">The fountain below consists of an array of containers each with a capacity of 2 litres.  Water is poured into the top container.  Once this container overflows, the water will start pouring onto the next level and once the containers at this level are filled they start pouring onto the third level and so on...  How much water must be poured in total to fill up one of the containers in the bottom row? (We’ll ignore the lack of a third dimension here to keep things a little simpler.)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 280.93px; height: 287.50px;"><img alt="" src="images/image607.png" style="width: 591.43px; height: 322.00px; margin-left: -122.39px; margin-top: -7.39px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></li></ol>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c36"><span>        </span><span class="c5">Repertoire</span></p>
-<ol class="c30 lst-kix_wsm6gr5lza7k-0" start="8"><li class="c10 li-bullet-0"><span>Recall the </span><span class="c31">Binomial Theorem</span><span> which states:  For constants </span><img src="images/image71.png"/><span>, and </span><img src="images/image35.png"/><span class="c0"> we have that;</span></li></ol>
+<ol class="c30 lst-kix_wsm6gr5lza7k-0" start="8"><li class="c10 li-bullet-0"><span>Recall the </span><span class="c31">Binomial Theorem</span><span> which states:  For constants </span><span class="mathjax-desmos">\(a,b\in{}\Re{}\)</span><span>, and </span><span class="mathjax-desmos">\(n\in{}\aleph{}\)</span><span class="c0"> we have that;</span></li></ol>
 <p class="c18"><span>Prove the binomial theorem using a </span><span class="c31">combinatorial argument</span><span class="c0">.</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 720.00px; height: 52.00px;"><img alt="" src="images/image527.png" style="width: 720.00px; height: 52.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36 c2"><span class="c0"></span></p>
@@ -1207,6 +1209,22 @@
 
             function scroll_to_id(id) {
                 document.getElementById(id).scrollIntoView();
+            }
+
+            function desmos(elem) {
+                window.parent.textbook(elem)
+            }
+    
+    
+            const elts = document.querySelectorAll('.mathjax-desmos');
+    
+            for (let i = elts.length - 1; i >= 0; --i) {
+                elts[i].dataset.jax = elts[i].innerText
+                elts[i].onclick = function () {
+                    let e = elts[i].innerText.substring(2, elts[i].innerText.length - 2);
+                    desmos(elts[i].dataset.jax.substring(2, elts[i].dataset.jax.length - 2));
+                };
+    
             }
         </script>
 

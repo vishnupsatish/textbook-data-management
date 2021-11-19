@@ -7,6 +7,8 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="c49 c260" onload="frame_init()">
@@ -56,7 +58,7 @@
 <h3 class="c94 c48" id="h.u76nby2wgi0w"><span class="c77 c74 c31">The Ethos of Probability Theory</span></h3>
 <p class="c1"><span class="c0">In the world of mathematics, probability theory is relatively young.  Many of us think of likelihoods in a very intuitive way, for example in many cultural traditions the family history of a prospective suitor was observed for the likelihood of desirable physical, mental, and personality traits.  Modern genetics has a significant grounding in probabilistic reasoning as mass amounts of research into the nature of how genes and traits are passed on have dominated the medical field for the past century.  The study of the quantum nature of matter is largely based on probabilistic results, causing the great scientist Albert Einstein to make his quip found at the onset of this chapter as he felt that the dynamics of a universe created by a perfect being could never be governed by chance events.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>At the heart of probability theory is the concept of the </span><span class="c31">randomness</span><span> of an event.  It is highly debatable whether or not true randomness truly exists in our universe.  Let us consider the example of a ‘coin flip’. We are comfortable with the idea of tossing “heads” with a fair coin to be equivalent to </span><img src="images/image72.png"/><span class="c0"> or 50%.  This clearly makes intuitive sense as there are two possible results and only one of them is construed to be “heads” as it were.  If however, we were privy to knowing the exact force exerted to the coin, the mass and rotational forces coupled with gravitational forces, friction of the air, etc... it would seem that we could, in fact, calculate which way the coin would fall.  So, in a sense, the event of this coin toss is not truly random, but rather when considering all of the subtle dynamics involved with this action we simply smooth out and balance all of these possibilities under the guise of “randomness”.  Thus, probability theory is a foray into a very convenient and effective method of approximation for determining the likelihood of a certain event.</span></p>
+<p class="c1"><span>At the heart of probability theory is the concept of the </span><span class="c31">randomness</span><span> of an event.  It is highly debatable whether or not true randomness truly exists in our universe.  Let us consider the example of a ‘coin flip’. We are comfortable with the idea of tossing “heads” with a fair coin to be equivalent to </span><span class="mathjax-desmos">\(\frac{1}{2}\)</span><span class="c0"> or 50%.  This clearly makes intuitive sense as there are two possible results and only one of them is construed to be “heads” as it were.  If however, we were privy to knowing the exact force exerted to the coin, the mass and rotational forces coupled with gravitational forces, friction of the air, etc... it would seem that we could, in fact, calculate which way the coin would fall.  So, in a sense, the event of this coin toss is not truly random, but rather when considering all of the subtle dynamics involved with this action we simply smooth out and balance all of these possibilities under the guise of “randomness”.  Thus, probability theory is a foray into a very convenient and effective method of approximation for determining the likelihood of a certain event.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <h3 class="c25" id="h.h9cdqd1lvbfh"><span class="c77 c74 c31">The Probability of a Random Event</span></h3>
 <p class="c1"><span class="c0">Before formally defining anything, let’s look at a fairly trivial example to motivate our understanding.</span></p>
@@ -65,7 +67,7 @@
 <p class="c1"><span class="c0">The names of five students are placed into a bag; Aakash, Andrew, Bogdan, Cherry, and Dejan.  One name is drawn from the bag.  What is the probability that the name selected begins with the letter ‘A’ ?</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Solution</span><span class="c0">:</span></p>
-<p class="c1"><span>As there are two names of the five that begin with the letter ‘A’; it would imply that the probability of selecting such a name would be </span><img src="images/image73.png"/><span class="c0">.</span></p>
+<p class="c1"><span>As there are two names of the five that begin with the letter ‘A’; it would imply that the probability of selecting such a name would be </span><span class="mathjax-desmos">\(\frac{2}{5}\)</span><span class="c0">.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Well that seemed a bit of a waste!!  But let’s break down this simplistic problem to highlight the vocabulary that we’ll be using throughout this unit and beyond:</span></p>
@@ -86,7 +88,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.5l3lzkib36l"><span class="c87 c85 c90 c31">Definition 2.1.3 (Probability)</span></p>
 <p class="c1"><span>The </span><span class="c31">probability</span><span class="c0"> of an outcome in event space A, is defined to be the proportion of the cardinality of the event A as compared to the cardinality of the outcome space S.  Mathematically this proportion is denoted by P(A) and is given by;</span></p>
-<p class="c1"><span class="c65">                </span><img src="images/image74.png"/></p>
+<p class="c1"><span class="c65">                </span><span class="mathjax-desmos">\(P(A)=\frac{n(A)}{n(S)}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">So at this point you may be cringing, having thought the challenges of combinatorics were left behind, only to realize that the probability of an event can be simply reduced to two counting problems!  But let’s not think this way, instead we’ll relish the future challenges that such problems can bring and rely on our freshly developed combinatorial intuition to take charge and guide us through.  In fact, many of the counting methods introduced in the previous chapter will carry through in a natural way when asked to determine the probability of a certain event, and thus life should not be so torturous after all.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -94,7 +96,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.7ebg3dz88ktr"><span class="c87 c104 c90 c31">Property 1: (Range of  Probabilities)</span></p>
 <p class="c1"><span class="c0">Given an outcome space S.  The probability of the event S, i.e. the likelihood of any outcome occurring is given by,</span></p>
-<p class="c1"><span>                </span><img src="images/image75.png"/></p>
+<p class="c1"><span>                </span><span class="mathjax-desmos">\(P(S)=\frac{n(S)}{n(S)}=1\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">and</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -102,18 +104,18 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Thus, the likelihood of any event, A,  is bounded by;</span></p>
-<p class="c1"><span class="c65">                </span><img src="images/image76.png"/></p>
+<p class="c1"><span class="c65">                </span><span class="mathjax-desmos">\(0\leq{}P(A)\leq{}1\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.9q5xn9xx5gw6"><span class="c104">Property 2:  (Probability of Complements)</span></p>
 <p class="c1"><span>Given an event A and its complement A</span><span class="c92">c</span><span class="c0"> we have the following:</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>                </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 176.50px; height: 24.00px;"><img alt="" src="images/image585.png" style="width: 176.50px; height: 24.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 128.90px; height: 58.85px;"><img alt="" src="images/image587.png" style="width: 128.90px; height: 58.85px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
-<p class="c1"><span class="c65">                           </span><img src="images/image77.png"/></p>
-<p class="c1"><span class="c65">                         </span><img src="images/image78.png"/></p>
+<p class="c1"><span class="c65">                           </span><span class="mathjax-desmos">\(=\frac{n(A)}{n(S)}+\frac{n({A}^{c})}{n(S)}\)</span></p>
+<p class="c1"><span class="c65">                         </span><span class="mathjax-desmos">\(=P(A)+P({A}^{c})=1\)</span></p>
 <p class="c1"><span class="c0">Thus,</span></p>
-<p class="c1"><span>                </span><img src="images/image79.png"/></p>
+<p class="c1"><span>                </span><span class="mathjax-desmos">\(P(A)+P({A}^{c})=1\)</span></p>
 <p class="c1 c2"><span class="c7"></span></p>
-<p class="c1"><span>or                </span><img src="images/image80.png"/></p>
+<p class="c1"><span>or                </span><span class="mathjax-desmos">\(P({A}^{c})=1-P(A)\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>Thus, if it’s easier to determine the probability of an undesirable event we simply have to subtract this result from 1 to obtain the chances of the desired event; this will mark the equivalent to the </span><span class="c31">Indirect Approach</span><span class="c0"> to counting problems.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -140,20 +142,20 @@
 <p class="c29 c2"><span class="c0"></span></p>
 <p class="c29 c2"><span class="c73 c88 c83 c90 c263"></span></p>
 <p class="c29"><span class="c73">Solution</span><span class="c0">:</span></p>
-<ol class="c30 lst-kix_xst5tkoity9d-0 start" start="1"><li class="c1 c141 li-bullet-0"><span>Let H represent the number of heads tossed.  Thus, </span><img src="images/image81.png"/><span class="c0"> since we can toss anywhere between zero to three heads during this process.</span></li></ol>
+<ol class="c30 lst-kix_xst5tkoity9d-0 start" start="1"><li class="c1 c141 li-bullet-0"><span>Let H represent the number of heads tossed.  Thus, </span><span class="mathjax-desmos">\(H=\left\{{0,1,2,3}\right\}\)</span><span class="c0"> since we can toss anywhere between zero to three heads during this process.</span></li></ol>
 <p class="c41 c2"><span class="c0"></span></p>
 <p class="c41 c2"><span class="c0"></span></p>
 <a id="t.6954a9c8e441824a2f50f7bc52f77a1c603bfa05"></a>
 <a id="t.12"></a>
-<table class="c106 c213"><tbody><tr class="c21"><td class="c81" colspan="1" rowspan="1"><p class="c28"><img src="images/image82.png"/></p><p class="c28 c2"><span class="c38 c12"></span></p><p class="c28"><img src="images/image83.png"/></p><p class="c28 c2"><span class="c38 c12"></span></p><p class="c28"><img src="images/image84.png"/></p></td><td class="c287" colspan="1" rowspan="1"><p class="c28"><span class="c0">Side work:  </span></p><p class="c28"><span class="c103">It is often helpful to work on the combinatorial calculations off to the side to ensure we remained focussed on the desired probability calculation to the left.</span></p><p class="c28 c2"><span class="c0"></span></p><p class="c28"><span class="c73 c5">n(S)</span><span class="c0">: (Direct Approach)</span></p><p class="c28"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 269.50px; height: 55.49px;"><img alt="" src="images/image605.png" style="width: 634.12px; height: 366.38px; margin-left: -127.70px; margin-top: -151.48px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p><p class="c41 c2"><span class="c0"></span></p><p class="c28"><span class="c73 c5">n (H = 2)</span><span class="c0">:  (Direct Approach)</span></p><p class="c28 c2"><span class="c0"></span></p><p class="c28"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 179.50px; height: 80.58px;"><img alt="" src="images/image665.png" style="width: 574.40px; height: 312.73px; margin-left: -111.69px; margin-top: -123.66px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr></tbody></table>
+<table class="c106 c213"><tbody><tr class="c21"><td class="c81" colspan="1" rowspan="1"><p class="c28"><span class="mathjax-desmos">\(P(H=2)\)</span></p><p class="c28 c2"><span class="c38 c12"></span></p><p class="c28"><span class="mathjax-desmos">\(=\frac{n(H=2)}{n(S)}\)</span></p><p class="c28 c2"><span class="c38 c12"></span></p><p class="c28"><span class="mathjax-desmos">\(=\frac{3}{8}\)</span></p></td><td class="c287" colspan="1" rowspan="1"><p class="c28"><span class="c0">Side work:  </span></p><p class="c28"><span class="c103">It is often helpful to work on the combinatorial calculations off to the side to ensure we remained focussed on the desired probability calculation to the left.</span></p><p class="c28 c2"><span class="c0"></span></p><p class="c28"><span class="c73 c5">n(S)</span><span class="c0">: (Direct Approach)</span></p><p class="c28"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 269.50px; height: 55.49px;"><img alt="" src="images/image605.png" style="width: 634.12px; height: 366.38px; margin-left: -127.70px; margin-top: -151.48px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p><p class="c41 c2"><span class="c0"></span></p><p class="c28"><span class="c73 c5">n (H = 2)</span><span class="c0">:  (Direct Approach)</span></p><p class="c28 c2"><span class="c0"></span></p><p class="c28"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 179.50px; height: 80.58px;"><img alt="" src="images/image665.png" style="width: 574.40px; height: 312.73px; margin-left: -111.69px; margin-top: -123.66px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr></tbody></table>
 <p class="c18"><span class="c0">It is instructive at this point to note that we do not always have to simply use random variables for the event spaces when expressing probabilities, in the solution above, we could  simply describe the event in question as “P( 2 heads)” to help make the solution clear.  </span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_xst5tkoity9d-0" start="2"><li class="c1 c141 li-bullet-0"><span class="c0">(Indirect Approach)</span></li></ol>
 <p class="c1"><span class="c0">Since we wish to observe the likelihood of at least one head being tossed, we can instead seek to calculate the probability that no heads were tossed (complementary set).  As there is only one way to have no heads (i.e. only tails were tossed) we have,</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">        </span><img src="images/image85.png"/></p>
+<p class="c1"><span class="c65">        </span><span class="mathjax-desmos">\(P(noheads)=P(H=0)=\frac{1}{8}\)</span></p>
 <p class="c1"><span class="c0">Thus,</span></p>
-<p class="c1"><span class="c65">        </span><img src="images/image86.png"/></p>
+<p class="c1"><span class="c65">        </span><span class="mathjax-desmos">\(P(H&gt;0)=1-P(H=0)=1-\frac{1}{8}=\frac{7}{8}\)</span></p>
 <p class="c35"><span>⬛</span></p>
 <h4 class="c80 c48" id="h.26vazdecw35b"><span class="c31 c53">Practice 2.1</span></h4>
 <p class="c1"><span class="c5">Technique</span></p>
@@ -177,7 +179,7 @@
 <p class="c36"><span>        </span><span class="c5">Studies</span></p>
 <ol class="c30 lst-kix_fsuvn9f3sett-0" start="7"><li class="c10 li-bullet-0"><span>In a class of 20 students what is the probability that </span><span class="c31">at least two</span><span class="c0"> of them share the same birthday?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_fsuvn9f3sett-0" start="8"><li class="c10 li-bullet-0"><span>A bag is  filled with a certain number of balls of varying colours.  The probability that  five balls, chosen at random, are all green is </span><img src="images/image72.png"/><span class="c0">.  Determine the minimum amount of balls that the bag can contain.</span></li></ol>
+<ol class="c30 lst-kix_fsuvn9f3sett-0" start="8"><li class="c10 li-bullet-0"><span>A bag is  filled with a certain number of balls of varying colours.  The probability that  five balls, chosen at random, are all green is </span><span class="mathjax-desmos">\(\frac{1}{2}\)</span><span class="c0">.  Determine the minimum amount of balls that the bag can contain.</span></li></ol>
 <p class="c18 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_fsuvn9f3sett-0" start="9"><li class="c10 li-bullet-0"><span>Explain why the order of the outcome of two dice must be considered when determining likelihoods of outcomes even though the dice may appear physically identical.</span></li></ol>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -193,7 +195,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <h3 class="c25" id="h.i1tlm4ljw4dh"><span>Mutually Exclusive Events</span></h3>
 <p class="c1 subtitle" id="h.o8reacy2n0o4"><span class="c87 c85 c90 c31">Definition 2.2.1</span></p>
-<p class="c1"><span>Two events A and B, are called </span><span class="c31">mutually exclusive</span><span> if they </span><span> share no elements in common meaning that </span><img src="images/image87.png"/><span class="c0">∅.  In this case we have that;</span></p>
+<p class="c1"><span>Two events A and B, are called </span><span class="c31">mutually exclusive</span><span> if they </span><span> share no elements in common meaning that </span><span class="mathjax-desmos">\(n(A\cap{}B)=\)</span><span class="c0">∅.  In this case we have that;</span></p>
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 245.00px; height: 23.00px;"><img alt="" src="images/image625.png" style="width: 245.00px; height: 23.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 subtitle" id="h.gno5iwheym4t"><span class="c87 c39 c90 c31">Example 2.2.1</span></p>
 <p class="c1"><span class="c0">What is the probability of rolling either a 3 or 5 with a single die?</span></p>
@@ -203,14 +205,14 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <a id="t.ad7b408cac898d1837dfd56f9218a9309d655f07"></a>
 <a id="t.13"></a>
-<table class="c106 c48"><tbody><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span class="c0">Case</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><span class="c0">Probability</span></p></td></tr><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span class="c0">P(roll 3)</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><img src="images/image88.png"/></p></td></tr><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span class="c0">P(roll 5)</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><img src="images/image88.png"/></p></td></tr><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span>P(roll 3 </span><span class="c31">or </span><span class="c0">5)</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><img src="images/image89.png"/></p></td></tr></tbody></table>
+<table class="c106 c48"><tbody><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span class="c0">Case</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><span class="c0">Probability</span></p></td></tr><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span class="c0">P(roll 3)</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(\frac{1}{6}\)</span></p></td></tr><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span class="c0">P(roll 5)</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(\frac{1}{6}\)</span></p></td></tr><tr class="c21"><td class="c212" colspan="1" rowspan="1"><p class="c4"><span>P(roll 3 </span><span class="c31">or </span><span class="c0">5)</span></p></td><td class="c40" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(\frac{1}{6}+\frac{1}{6}=\frac{1}{3}\)</span></p></td></tr></tbody></table>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 subtitle" id="h.gfxn1vjvh8je"><span class="c87 c39 c90 c31">Example 2.2.2</span></p>
 <p class="c1"><span class="c0">There are 10 red balls and 15 black balls in a box.  If seven balls are selected at random from the box what is the probability that at least 6 will be black?</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Solution</span><span class="c0">: (Cases Approach)</span></p>
 <p class="c1"><span class="c0">Let B represent the number of black balls selected; thus B = {0, 1, …, 6, 7}</span></p>
-<p class="c1"><span>We wish to determine </span><img src="images/image90.png"/><span> and since each outcome is </span><span class="c31">mutually exclusive</span><span class="c0"> we can determine the probability of each case separately;</span></p>
+<p class="c1"><span>We wish to determine </span><span class="mathjax-desmos">\(P(B\geq{}6)\)</span><span> and since each outcome is </span><span class="c31">mutually exclusive</span><span class="c0"> we can determine the probability of each case separately;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Case 1:  P(B = 6)</span></p>
 <p class="c1"><span class="c0">If we have six black balls then in turn we must have also selected one red ball, thus our event space is;</span></p>
@@ -242,18 +244,18 @@
 <p class="c1"><span>Just as with overlapping cases before, we can approach such problems either </span><span class="c5">algebraically</span><span> by using the Principle of Inclusion and Exclusion, or </span><span class="c5">graphically</span><span class="c0"> using Venn diagrams.  We’ll select the most appropriate to each situation.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_x0zz9p9y0uji-0 start" start="1"><li class="c10 li-bullet-0"><span>(Cases Approach; Inclusion/Exclusion)</span></li></ol>
-<p class="c18"><img src="images/image91.png"/></p>
-<p class="c18"><img src="images/image92.png"/></p>
-<p class="c36 c237"><span class="c12">  </span><img src="images/image93.png"/></p>
-<p class="c36 c237"><span class="c12">  </span><img src="images/image94.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(P(I\cup{}T\cup{}Y)=P(I)+P(T)+P(Y)-P(I\cap{}T)-P(T\cap{}Y)-P(I\cap{}Y)+P(I\cap{}T\cap{}Y)\)</span></p>
+<p class="c18"><span class="mathjax-desmos">\(=\frac{74}{100}+\frac{38}{100}+\frac{32}{100}-\frac{25}{100}-\frac{18}{100}-\frac{22}{100}+\frac{7}{100}\)</span></p>
+<p class="c36 c237"><span class="c12">  </span><span class="mathjax-desmos">\(=\frac{86}{100}\)</span></p>
+<p class="c36 c237"><span class="c12">  </span><span class="mathjax-desmos">\(=0.86\)</span></p>
 <p class="c1"><span class="c12">        </span><span class="c0">Thus, 86% of the respondents have posted on one of these sites in the past year.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_x0zz9p9y0uji-0" start="2"><li class="c10 li-bullet-0"><span class="c0">(Indirect Approach)</span></li></ol>
 <p class="c18"><span>To determine the amount of students who did not post, we recognize that this is simply the </span><span class="c31">complement</span><span class="c0"> of the previous set giving us;</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
-<p class="c18"><img src="images/image95.png"/></p>
-<p class="c18"><span class="c12">             </span><img src="images/image96.png"/></p>
-<p class="c18"><span class="c12">             </span><img src="images/image97.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(P(none)=1-P(I\cup{}T\cup{}Y)\)</span></p>
+<p class="c18"><span class="c12">             </span><span class="mathjax-desmos">\(=1-0.86\)</span></p>
+<p class="c18"><span class="c12">             </span><span class="mathjax-desmos">\(=0.14\)</span></p>
 <p class="c18"><span class="c0">Thus, about 14% did not post on any type of online media in the past year.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_x0zz9p9y0uji-0" start="3"><li class="c10 li-bullet-0"><span class="c0">(Cases; Venn Diagram)</span></li></ol>
@@ -277,11 +279,11 @@
 <p class="c36"><span class="c0">        </span></p>
 <p class="c36"><span>        </span><span class="c56 c5 c90">Studies</span></p>
 <ol class="c30 lst-kix_3nrkccq052fl-0" start="6"><li class="c10 li-bullet-0"><span class="c0">A spinner is designed with 7 slots such that;</span></li></ol>
-<p class="c18"><span>        </span><img src="images/image98.png"/><span class="c0">,</span></p>
+<p class="c18"><span>        </span><span class="mathjax-desmos">\(P(1)=P(2)=P(6)\)</span><span class="c0">,</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
-<p class="c18"><span>        </span><img src="images/image99.png"/><span class="c0">, and</span></p>
+<p class="c18"><span>        </span><span class="mathjax-desmos">\(P(3)=2P(4)=\frac{1}{2}P(1)\)</span><span class="c0">, and</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
-<p class="c18"><span>        </span><img src="images/image100.png"/><span class="c0">.</span></p>
+<p class="c18"><span>        </span><span class="mathjax-desmos">\(P(5)=\frac{1}{2}P(7)=\frac{1}{4}P(1)\)</span><span class="c0">.</span></p>
 <p class="c18"><span>Determine the likelihood of each sector of the spinner.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -296,14 +298,14 @@
 <p class="c1"><span class="c73">Solution</span><span class="c0">: (Direct Approach)</span></p>
 <p class="c1"><span class="c0">Using combinatorics to work through this problem we realize that in total each person has twelve options for their birth month to be assigned to them, while we must assign separate months for each person to ensure that they are not born on the same month, yielding;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>                </span><img src="images/image101.png"/></p>
-<p class="c1"><span class="c12">                                 </span><img src="images/image102.png"/></p>
-<p class="c1"><span class="c12">                                 </span><img src="images/image103.png"/></p>
+<p class="c1"><span>                </span><span class="mathjax-desmos">\(P(noone)=\frac{n(noone)}{n(total)}\)</span></p>
+<p class="c1"><span class="c12">                                 </span><span class="mathjax-desmos">\(=\frac{{}_{12}{P}_{3}}{{12}^{3}}\)</span></p>
+<p class="c1"><span class="c12">                                 </span><span class="mathjax-desmos">\(=0.764\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1"><span class="c0">Now let’s consider this in another light.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Alternate Solution</span><span class="c0">: (Direct Approach)</span></p>
-<p class="c1"><span>We’ll name the three individuals Intisar, Janet, and Karan.  Then considering the likelihoods per individual we get the following results; for Intisar he can be allocated any of the 12 months and so the probability would be </span><img src="images/image104.png"/><span class="c0">, then Janet can only be allocated any 11 of the twelve, followed by Karan being allotted any 10 of the remaining months. This shows up as a series of successive action as follows:</span></p>
+<p class="c1"><span>We’ll name the three individuals Intisar, Janet, and Karan.  Then considering the likelihoods per individual we get the following results; for Intisar he can be allocated any of the 12 months and so the probability would be </span><span class="mathjax-desmos">\(\frac{12}{12}=1\)</span><span class="c0">, then Janet can only be allocated any 11 of the twelve, followed by Karan being allotted any 10 of the remaining months. This shows up as a series of successive action as follows:</span></p>
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 508.00px; height: 122.00px;"><img alt="" src="images/image659.png" style="width: 720.00px; height: 392.00px; margin-left: -65.00px; margin-top: -142.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -315,14 +317,14 @@
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36"><span>        </span><span class="c73">Solution</span><span class="c0">: </span></p>
 <ol class="c30 lst-kix_vie7au1zkwqm-0 start" start="1"><li class="c10 li-bullet-0"><span class="c0">(Direct Approach)</span></li></ol>
-<p class="c18"><span>Let A represent the number of times Atharva wins; thus </span><img src="images/image105.png"/><span class="c0">.</span></p>
+<p class="c18"><span>Let A represent the number of times Atharva wins; thus </span><span class="mathjax-desmos">\(A=\{0,1,2,3\}\)</span><span class="c0">.</span></p>
 <p class="c18"><span class="c0">We’ll assume that Atharva’s blade will have an 84% chance of winning every time they battle, thus we can break the probabilities up by each match up as follows;</span></p>
 <p class="c36"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 521.00px; height: 74.00px;"><img alt="" src="images/image564.png" style="width: 720.00px; height: 392.00px; margin-left: -63.00px; margin-top: -154.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <ol class="c30 lst-kix_vie7au1zkwqm-0" start="2"><li class="c10 li-bullet-0"><span class="c0">(Indirect Approach)</span></li></ol>
 <p class="c18"><span>If Morgan wins at least one battle, that means that Atharva </span><span class="c31">doesn’t win all three</span><span class="c0">.  Thus, given that we’ve already calculated the complement we get;</span></p>
-<p class="c18"><img src="images/image106.png"/></p>
-<p class="c18"><span class="c65">                </span><img src="images/image107.png"/></p>
-<p class="c18"><span class="c65">                </span><img src="images/image108.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(P(A&lt;3)=1-P(A=3)\)</span></p>
+<p class="c18"><span class="c65">                </span><span class="mathjax-desmos">\(=1-0.59\)</span></p>
+<p class="c18"><span class="c65">                </span><span class="mathjax-desmos">\(=0.41\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -351,7 +353,7 @@
 <p class="c1"><span class="c0">Having that the Fundamental Principle of Counting (a.k.a. the Direct Approach) still applies to probabilistic situations, we can now grapple with some more interesting scenarios. But first we’ll introduce some terminology;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.xnann0zhcov8"><span class="c87 c85 c90 c31">Definition 2.4.1</span></p>
-<p class="c29"><span>Two events, A and B, are said to be </span><span class="c31">independent</span><span> if and only if  </span><img src="images/image109.png"/><span class="c0">.</span></p>
+<p class="c29"><span>Two events, A and B, are said to be </span><span class="c31">independent</span><span> if and only if  </span><span class="mathjax-desmos">\(P(A\cap{}B)=P(A)\times{}P(B)\)</span><span class="c0">.</span></p>
 <p class="c29 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">If you’re thinking, “OK, what’s that supposed to mean?” then you’ve asked yourself a very good question!  Observing the definition from a set theoretic point of view, all we can derive is that the likelihood of the intersection of two sets are deemed independent when we can determine this probability by multiplying the respective probabilities of each set taken separately.  This is all well and good but let’s discuss this phenomenon in a different perspective to hopefully give us a better sense of the matter.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -371,9 +373,9 @@
 <p class="c1"><span class="c0">In a similar manner we can now define the notion of events whose probabilities are not independent of previous results, namely;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.n1zjj4dfrzxg"><span class="c87 c85 c90 c31">Definition 2.4.2</span></p>
-<p class="c29"><span>Two events A and B are considered </span><span class="c31">dependent</span><span> if;  </span><img src="images/image110.png"/><span class="c0">.</span></p>
+<p class="c29"><span>Two events A and B are considered </span><span class="c31">dependent</span><span> if;  </span><span class="mathjax-desmos">\(P(A\cap{}B)=P(A)\times{}P(B|A)\)</span><span class="c0">.</span></p>
 <p class="c29 c2"><span class="c0"></span></p>
-<p class="c29"><span>NOTE:  </span><img src="images/image111.png"/><span>means the likelihood that B occurs </span><span class="c31">given</span><span class="c0"> that A has occurred.</span></p>
+<p class="c29"><span>NOTE:  </span><span class="mathjax-desmos">\(P(B|A)\)</span><span>means the likelihood that B occurs </span><span class="c31">given</span><span class="c0"> that A has occurred.</span></p>
 <p class="c29 c2"><span class="c0"></span></p>
 <p class="c29 c2"><span class="c0"></span></p>
 <p class="c29 c2"><span class="c0"></span></p>
@@ -413,9 +415,9 @@
 <p class="c1"><span class="c0">Tracing along the branches that have Mimi winning at least two times, we are able to map out each desired case in our solution.  As the events are successive, we can multiply the probabilities along each branch as shown in the diagram above.  </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 452.50px; height: 318.90px;"><img alt="" src="images/image563.png" style="width: 452.50px; height: 318.90px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Hence, we get;</span></p>
-<p class="c1"><span>        </span><img src="images/image112.png"/></p>
-<p class="c1"><span class="c12">                        </span><img src="images/image113.png"/></p>
-<p class="c1"><span>                </span><span class="c12">        </span><img src="images/image114.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(P(M\geq{}2)=P(MMM)+P(MMY)+P(MYM)+P(YMM)\)</span></p>
+<p class="c1"><span class="c12">                        </span><span class="mathjax-desmos">\(=(0.3{)}^{3}+(0.3{)}^{2}(0.7)+(0.3)(0.7)(0.3)+(0.7)(0.3{)}^{2}\)</span></p>
+<p class="c1"><span>                </span><span class="c12">        </span><span class="mathjax-desmos">\(=0.217\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Thus, Mimi only has a 21.7% chance of winning this three match set.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
@@ -433,29 +435,29 @@
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 238.00px;"><img alt="" src="images/image613.png" style="width: 720.00px; height: 392.00px; margin-left: -108.00px; margin-top: -57.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1"><span class="c0">We further notice that the test yields a “correct” result in one of two distinct cases, namely when the test shows positive and the person has Morgan’s or when it shows negative when the person does not have Morgan’s as indicated above. This gives us;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">        </span><img src="images/image115.png"/></p>
-<p class="c1"><span class="c65">                             </span><img src="images/image116.png"/></p>
-<p class="c1"><span class="c65">                             </span><img src="images/image117.png"/></p>
+<p class="c1"><span class="c65">        </span><span class="mathjax-desmos">\(P(Correct)=P(Yand+)+P(Nand-)\)</span></p>
+<p class="c1"><span class="c65">                             </span><span class="mathjax-desmos">\(=\left({\frac{1}{200}}\right)\left({0.98}\right)+\left({\frac{199}{200}}\right)\left({0.95}\right)\)</span></p>
+<p class="c1"><span class="c65">                             </span><span class="mathjax-desmos">\(=0.95\)</span></p>
 <p class="c1"><span class="c0">Hence, the test is “correct” about 95% of the time.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <h4 class="c80 c48" id="h.2ot5ewnfm3rn"><span class="c53 c31">Practice 2.4</span></h4>
 <p class="c29"><span class="c5">Technique</span></p>
-<ol class="c30 lst-kix_v46s2083rcok-0 start" start="1"><li class="c10 li-bullet-0"><span>Atharva estimates that the probability of getting the next question right if the previous one was right on a Probability test is </span><img src="images/image118.png"/><span>.  But the chance of getting it right if the previous one was wrong is only </span><img src="images/image73.png"/><span class="c0">.  Assuming that it is equally likely to get the first question correct, determine the probability of getting;</span></li></ol>
+<ol class="c30 lst-kix_v46s2083rcok-0 start" start="1"><li class="c10 li-bullet-0"><span>Atharva estimates that the probability of getting the next question right if the previous one was right on a Probability test is </span><span class="mathjax-desmos">\(\frac{4}{5}\)</span><span>.  But the chance of getting it right if the previous one was wrong is only </span><span class="mathjax-desmos">\(\frac{2}{5}\)</span><span class="c0">.  Assuming that it is equally likely to get the first question correct, determine the probability of getting;</span></li></ol>
 <p class="c36"><span class="c0">                a) the second question correct.</span></p>
 <p class="c36"><span class="c0">                b) the third question correct.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_v46s2083rcok-0" start="2"><li class="c10 li-bullet-0"><span>Victoria and Edward are evenly matched tennis players.  However each time Victoria loses a set her probability of winning the next game is decreased by </span><img src="images/image119.png"/><span> .  But when she wins, her probability of winning the next set increases by </span><img src="images/image120.png"/><span class="c0">.</span></li></ol>
+<ol class="c30 lst-kix_v46s2083rcok-0" start="2"><li class="c10 li-bullet-0"><span>Victoria and Edward are evenly matched tennis players.  However each time Victoria loses a set her probability of winning the next game is decreased by </span><span class="mathjax-desmos">\(\frac{1}{5}\)</span><span> .  But when she wins, her probability of winning the next set increases by </span><span class="mathjax-desmos">\(\frac{1}{10}\)</span><span class="c0">.</span></li></ol>
 <p class="c18"><span class="c0">a) Draw a probability tree that illustrates a 3-set match between these two players.</span></p>
 <p class="c18"><span class="c0">b) Determine the probability that Victoria wins at least two of the three sets.</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_v46s2083rcok-0" start="3"><li class="c10 li-bullet-0"><span>If Victor is late for his Data class, he makes a greater effort to arrive on time for the next class and the probability that he is on time is </span><img src="images/image121.png"/><span>.  However if he is on time, he is liable to be less concerned about punctuality for the next class and his probability of being on time drops to </span><img src="images/image72.png"/><span class="c0">. If Victor was on time on Monday determine the probability that he would be late on Wednesday.</span></li></ol>
+<ol class="c30 lst-kix_v46s2083rcok-0" start="3"><li class="c10 li-bullet-0"><span>If Victor is late for his Data class, he makes a greater effort to arrive on time for the next class and the probability that he is on time is </span><span class="mathjax-desmos">\(\frac{3}{4}\)</span><span>.  However if he is on time, he is liable to be less concerned about punctuality for the next class and his probability of being on time drops to </span><span class="mathjax-desmos">\(\frac{1}{2}\)</span><span class="c0">. If Victor was on time on Monday determine the probability that he would be late on Wednesday.</span></li></ol>
 <p class="c18 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_v46s2083rcok-0" start="4"><li class="c10 li-bullet-0"><span class="c0">A drawer contains 4 red and 3 black socks.  If three socks are drawn randomly without replacement.  Determine the probability that at least two of them are red socks.</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36"><span>        </span><span class="c5">Studies</span></p>
-<ol class="c30 lst-kix_v46s2083rcok-0" start="5"><li class="c10 li-bullet-0"><span>1600 ants start climbing a tree as shown in the diagram below.  At each branch </span><img src="images/image122.png"/><span> of the ants go left and </span><img src="images/image121.png"/><span class="c0"> of the ants go right.  How many ants reach the point W?  How many reach the point V?</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 278.50px; height: 154.77px;"><img alt="" src="images/image495.png" style="width: 297.95px; height: 174.22px; margin-left: -8.69px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></li></ol>
+<ol class="c30 lst-kix_v46s2083rcok-0" start="5"><li class="c10 li-bullet-0"><span>1600 ants start climbing a tree as shown in the diagram below.  At each branch </span><span class="mathjax-desmos">\(\frac{1}{4}\)</span><span> of the ants go left and </span><span class="mathjax-desmos">\(\frac{3}{4}\)</span><span class="c0"> of the ants go right.  How many ants reach the point W?  How many reach the point V?</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 278.50px; height: 154.77px;"><img alt="" src="images/image495.png" style="width: 297.95px; height: 174.22px; margin-left: -8.69px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></li></ol>
 <p class="c36"><span class="c0">                </span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36 c2"><span class="c0"></span></p>
@@ -487,14 +489,14 @@
 <h2 class="c37" id="h.yoqtn6hf795a"><span class="c50 c31">2.5 Conditional Probabilities</span></h2>
 <p class="c29"><span class="c113 c74">title_section</span></p>
 <p class="c48 c273"><span class="c0">The definition of two dependent events A and B yielded the relationship;</span></p>
-<p class="c48 c262"><img src="images/image123.png"/></p>
-<p class="c97 c48"><span> </span><span>where </span><img src="images/image124.png"/><span> is defined to be the probability that B occurs </span><span class="c31">given</span><span class="c0"> that the event A has occurred.  Let’s inspect this situation a little more closely.  Observing the diagram below we see the sets A and B sitting within our outcome space S,</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 295.50px; height: 172.10px;"><img alt="" src="images/image529.png" style="width: 422.98px; height: 230.24px; margin-left: -56.40px; margin-top: -13.51px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 412.61px; height: 172.00px;"><img alt="" src="images/image516.png" style="width: 421.99px; height: 230.12px; margin-left: -5.27px; margin-top: -17.02px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
-<p class="c48 c97"><span>Being privy to the knowledge that A has occurred we now can restrict the outcome space to being the set A only.  Furthermore, the only outcomes in the set B that are now relevant reside in the set </span><img src="images/image125.png"/><span class="c0">. This leads us to the following relationship;</span></p>
-<p class="c97 c48"><span class="c65">        </span><img src="images/image126.png"/></p>
-<p class="c97 c48"><span>It should be noted that there is nothing really unique about this formula. We are still ultimately adhering to the original defined relationship for probability, namely that </span><img src="images/image74.png"/><span class="c0">  with the exception that there are now restrictions on both our event space and outcome space.</span></p>
-<p class="c97 c48"><span>Moreover, if we divide both the numerator and denominator by </span><img src="images/image127.png"/><span class="c0">we get;</span></p>
-<p class="c97 c48"><span class="c65">        </span><img src="images/image128.png"/></p>
-<p class="c97 c95 c48"><img src="images/image129.png"/></p>
+<p class="c48 c262"><span class="mathjax-desmos">\(P(A\cap{}B)=P(A)\cdot{}P(B|A)\)</span></p>
+<p class="c97 c48"><span> </span><span>where </span><span class="mathjax-desmos">\(P(B|A)\)</span><span> is defined to be the probability that B occurs </span><span class="c31">given</span><span class="c0"> that the event A has occurred.  Let’s inspect this situation a little more closely.  Observing the diagram below we see the sets A and B sitting within our outcome space S,</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 295.50px; height: 172.10px;"><img alt="" src="images/image529.png" style="width: 422.98px; height: 230.24px; margin-left: -56.40px; margin-top: -13.51px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 412.61px; height: 172.00px;"><img alt="" src="images/image516.png" style="width: 421.99px; height: 230.12px; margin-left: -5.27px; margin-top: -17.02px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
+<p class="c48 c97"><span>Being privy to the knowledge that A has occurred we now can restrict the outcome space to being the set A only.  Furthermore, the only outcomes in the set B that are now relevant reside in the set </span><span class="mathjax-desmos">\(A\cap{}B\)</span><span class="c0">. This leads us to the following relationship;</span></p>
+<p class="c97 c48"><span class="c65">        </span><span class="mathjax-desmos">\(P(B|A)=\frac{n(A\cap{}B)}{n(A)}\)</span></p>
+<p class="c97 c48"><span>It should be noted that there is nothing really unique about this formula. We are still ultimately adhering to the original defined relationship for probability, namely that </span><span class="mathjax-desmos">\(P(A)=\frac{n(A)}{n(S)}\)</span><span class="c0">  with the exception that there are now restrictions on both our event space and outcome space.</span></p>
+<p class="c97 c48"><span>Moreover, if we divide both the numerator and denominator by </span><span class="mathjax-desmos">\(n(S)\)</span><span class="c0">we get;</span></p>
+<p class="c97 c48"><span class="c65">        </span><span class="mathjax-desmos">\(P(B|A)=\frac{n(A\cap{}B)/n(S)}{n(A)/n(S)}\)</span></p>
+<p class="c97 c95 c48"><span class="mathjax-desmos">\(P(B|A)=\frac{P(A\cap{}B)}{P(A)}\)</span></p>
 <p class="c97 c48"><span> You may also notice that this relationship is just a rearrangement of the original definition for </span><span class="c31">dependent events</span><span class="c0"> A and B.  So now we essentially have two ways of working with probabilities with given information; either by counting outcomes or by considering the likelihoods of the said information.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.83lltys0v4x7"><span class="c87 c39 c90 c31">Example 2.5.1</span></p>
@@ -504,9 +506,9 @@
 <p class="c1"><span class="c0">We’ll begin by sketching a probability tree to visualize the possible outcomes.</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 443.00px; height: 251.00px;"><img alt="" src="images/image522.png" style="width: 720.00px; height: 392.00px; margin-left: -99.00px; margin-top: -61.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1"><span>Since we’re given that one of the children is non-binary, our outcome space is now restricted to the paths indicated in </span><span class="c104 c31">green</span><span> in the diagram above.  Thus, we can effectively </span><span class="c5">cut out</span><span class="c0"> the non-highlighted branches.  Consequently, we now can work through the calculation as follows;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><img src="images/image130.png"/></p>
-<p class="c1"><span class="c65">                   </span><img src="images/image131.png"/></p>
-<p class="c1"><span class="c65">                   </span><img src="images/image132.png"/></p>
+<p class="c1"><span class="mathjax-desmos">\(P(2N|N\geq{}1)=\frac{P(2N\cap{}N\geq{}1)}{P(N\geq{}1)}\)</span></p>
+<p class="c1"><span class="c65">                   </span><span class="mathjax-desmos">\(=\frac{{\left({0.004}\right)}^{2}}{\left({0.496}\right)(0.004)+(0.004)(0.496)+{(0.004)}^{2}+(0.004)(0.5)+(0.5)(0.004)}\)</span></p>
+<p class="c1"><span class="c65">                   </span><span class="mathjax-desmos">\(=0.002\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Thus, there is a 0.2% that such a family would have two non-binary children.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
@@ -525,9 +527,9 @@
 <p class="c1"><span class="c0">Let’s show our diagram again of the testing scenarios for Morgan’s Syndrome but this time realizing that some of our outcomes, namely the one’s where the test result is negative are now restricted.</span></p>
 <p class="c1"><span class="c0">So, once again, knowing that Devon obtained a positive result, we determine the likelihood that he actually has Morgan’s by utilizing the conditional probability formula as shown below;</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 485.00px; height: 288.00px;"><img alt="" src="images/image634.png" style="width: 720.00px; height: 392.00px; margin-left: -141.00px; margin-top: -59.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">        </span><img src="images/image133.png"/></p>
-<p class="c1"><span class="c65">                         </span><img src="images/image134.png"/></p>
-<p class="c1"><span class="c65">                         </span><img src="images/image135.png"/></p>
+<p class="c1"><span class="c65">        </span><span class="mathjax-desmos">\(P(M|+)=\frac{P(M\cap{}+)}{P(+)}\)</span></p>
+<p class="c1"><span class="c65">                         </span><span class="mathjax-desmos">\(=\frac{\left({\frac{1}{200}}\right)(0.98)}{\left({\frac{1}{200}}\right)(0.98)+\left({\frac{199}{200}}\right)(0.05)}\)</span></p>
+<p class="c1"><span class="c65">                         </span><span class="mathjax-desmos">\(=0.09\)</span></p>
 <p class="c1"><span class="c0">Thus, the likelihood that Devon has Morgan’s syndrome is only 9% !?!</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -550,7 +552,7 @@
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_hwk4beu2sr20-0" start="7"><li class="c10 li-bullet-0"><span class="c0">There are four cards in a box.  One card is red on both sides.  The other cards are each red on one side and green on the other.  A card is drawn randomly from the box and placed on the table so that the side facing downward cannot be seen.  If the side facing up is red, what is the probability that the down side is also red?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_hwk4beu2sr20-0" start="8"><li class="c10 li-bullet-0"><span>Show that events </span><span class="c5">A</span><span> and </span><span class="c5">B</span><span> are </span><span class="c31">independent</span><span> if and only if </span><img src="images/image136.png"/><span>.  (Remember that the phrase </span><span class="c5">if and only if</span><span> implies that you have to first assume the independence of </span><span class="c5">A</span><span> and </span><span class="c5">B</span><span> and prove the relationship, </span><span class="c31">then</span><span class="c0"> assume the relationship is true and prove that the events are independent.)</span></li></ol>
+<ol class="c30 lst-kix_hwk4beu2sr20-0" start="8"><li class="c10 li-bullet-0"><span>Show that events </span><span class="c5">A</span><span> and </span><span class="c5">B</span><span> are </span><span class="c31">independent</span><span> if and only if </span><span class="mathjax-desmos">\(P(A|B)=P(A|{B}^{c})\)</span><span>.  (Remember that the phrase </span><span class="c5">if and only if</span><span> implies that you have to first assume the independence of </span><span class="c5">A</span><span> and </span><span class="c5">B</span><span> and prove the relationship, </span><span class="c31">then</span><span class="c0"> assume the relationship is true and prove that the events are independent.)</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36 c2"><span class="c0"></span></p>
@@ -579,7 +581,7 @@
 <h2 class="c37" id="h.26cj13i845xl"><span class="c50 c31">2.6 Using Simulations to Estimate Probabilities</span></h2>
 <p class="c29"><span class="c113 c74">title_section</span></p>
 <h3 class="c48 c94" id="h.875zfvwrhlfp"><span class="c77 c74 c31">Hitting the Combinatorial Wall</span></h3>
-<p class="c1"><span>Up until this point we’ve focussed on the theoretical determination of the likelihood of a random event </span><span class="c5">A</span><span>.  By now you should be keenly aware that, combinatorially speaking, this is not always an easy task. Secondly, in our initial discussion on the matter of defining a “random” event we realize that the implicit assumption being made is that we are effectively assuming that all of the subtleties of the universe will ultimately balance out yielding only our denied proportion </span><img src="images/image74.png"/><span> .  Lastly, we also recognize that the probability of an event measures the long term likelihood of the event occurring. Thus, we come to a vastly different approach to determining the probability, that of using a </span><span class="c31">simulation</span><span class="c0">.</span></p>
+<p class="c1"><span>Up until this point we’ve focussed on the theoretical determination of the likelihood of a random event </span><span class="c5">A</span><span>.  By now you should be keenly aware that, combinatorially speaking, this is not always an easy task. Secondly, in our initial discussion on the matter of defining a “random” event we realize that the implicit assumption being made is that we are effectively assuming that all of the subtleties of the universe will ultimately balance out yielding only our denied proportion </span><span class="mathjax-desmos">\(P(A)=\frac{n(A)}{n(S)}\)</span><span> .  Lastly, we also recognize that the probability of an event measures the long term likelihood of the event occurring. Thus, we come to a vastly different approach to determining the probability, that of using a </span><span class="c31">simulation</span><span class="c0">.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Effectively a simulation recreates the event we wish to measure and runs through the process many times over to provide an estimation of the desired probability.  If our simulation can in fact reproduce the actions which comprise the event in question with a high degree of accuracy and enough trials are run (which often means thousands, if not hundreds of thousands) then our experimental result should approach the theoretical result without the necessity of working through a cumbersome combinatorial problem (which may be unsolvable given current mathematical techniques).</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -660,9 +662,9 @@
 <p class="c1"><span class="c0">We’ve defined this earlier in the unit, but we’ll now use this concept with greater emphasis.  As such, here are some examples of random variables;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_v1ga8v96u64c-0 start" start="1"><li class="c10 li-bullet-0"><span class="c0">Let H represent the number of heads tossed after three tosses of a fair coin.  Thus, </span></li></ol>
-<p class="c18"><img src="images/image137.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(H=\{0,1,2,3\}\)</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_v1ga8v96u64c-0" start="2"><li class="c10 li-bullet-0"><span>Let C represent the colour of a traffic light when encountered at a certain intersection. Then </span><img src="images/image138.png"/></li></ol>
+<ol class="c30 lst-kix_v1ga8v96u64c-0" start="2"><li class="c10 li-bullet-0"><span>Let C represent the colour of a traffic light when encountered at a certain intersection. Then </span><span class="mathjax-desmos">\(C=\{red,amber,green\}\)</span></li></ol>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Recall</span><span class="c0">:  Since the above random variables can only take on a “countable” set of outcomes, the random variable is considered “discrete”.  If we were measuring something like; time, distances, volume, etc..., then we would consider the random variable to be “continuous” in nature, which will be examined in the next unit.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -674,7 +676,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 subtitle" id="h.ty9gsazedome"><span class="c87 c85 c90 c31">Definition 2.7.3</span></p>
 <p class="c1"><span>The </span><span class="c31">expected value</span><span class="c0"> of a random variable, denoted E(X), is the outcome of a random variable that is most expected.  Furthermore, E(X) is given by the equation;</span></p>
-<p class="c147 c48"><img src="images/image139.png"/></p>
+<p class="c147 c48"><span class="mathjax-desmos">\(E(X)=\sum\limits_{x}^{}\left[{x\cdot{}P(X=x)}\right]\)</span></p>
 <p class="c1"><span class="c0">Effectively, this just means to sum each outcome multiplied by the likelihood of that outcome.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -687,15 +689,15 @@
 <p class="c1"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 246.50px; height: 187.93px;"><img alt="" src="images/image583.png" style="width: 469.52px; height: 270.51px; margin-left: -93.25px; margin-top: -43.57px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <a id="t.06b08552ff336fbbb5cffe3fce5a803740f2f5c0"></a>
 <a id="t.14"></a>
-<table class="c106 c48"><tbody><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">h</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c0">P(H = h)</span></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">0</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><img src="images/image140.png"/></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">1</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><img src="images/image141.png"/></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">2</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><img src="images/image141.png"/></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">3</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><img src="images/image140.png"/></p></td></tr></tbody></table>
+<table class="c106 c48"><tbody><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">h</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c0">P(H = h)</span></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">0</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(\frac{1}{8}\)</span></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">1</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(\frac{3}{8}\)</span></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">2</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(\frac{3}{8}\)</span></p></td></tr><tr class="c21"><td class="c218" colspan="1" rowspan="1"><p class="c4"><span class="c0">3</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(\frac{1}{8}\)</span></p></td></tr></tbody></table>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">We often show the distribution as a graph as is shown to the right above.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">To get the expected value, we simply multiply each outcome from H with its associated probability, then add up the total giving us;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image142.png"/></p>
-<p class="c1"><span class="c12">                </span><img src="images/image143.png"/></p>
-<p class="c1"><span class="c12">                </span><img src="images/image144.png"/></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(E(H)=\sum\limits_{h}^{}h\cdot{}P(H=h)\)</span></p>
+<p class="c1"><span class="c12">                </span><span class="mathjax-desmos">\(=(0)\left({\frac{1}{8}}\right)+(1)\left({\frac{3}{8}}\right)+(2)\left({\frac{3}{8}}\right)+(3)\left({\frac{1}{8}}\right)\)</span></p>
+<p class="c1"><span class="c12">                </span><span class="mathjax-desmos">\(=1.5\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>It should be noted that the </span><span class="c31">expected value</span><span> </span><span class="c31">does not have to equal any of the outcomes of the random variable</span><span>.  Instead, think of the expected value as a </span><span class="c5">weighted average</span><span class="c0"> of the outcomes.</span></p>
@@ -710,9 +712,9 @@
 <p class="c1"><span class="c0">Let A represent the prize amount won.</span></p>
 <p class="c1"><span>The table above effectively gives us the </span><span class="c31">probability distribution</span><span class="c0"> for our random variable A.  The probabilities associated with each prize amount can simply be found by taking all of the winning tickets divided by the 200 000 total tickets sold.  Thus, our expected prize amount is given as follows;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><img src="images/image145.png"/></p>
-<p class="c1"><img/></p>
-<p class="c1"><img src="images/image146.png"/></p>
+<p class="c1"><span class="mathjax-desmos">\(E(A)=\sum\limits_{a}^{}a\cdot{}P(A=a)\)</span></p>
+<p class="c1"><span class="mathjax-desmos">\(=(1000000)\left({\frac{5}{200000}}\right)+(100000)\left({\frac{50}{200000}}\right)+(10000)\left({\frac{1000}{200000}}\right)+(1000)\left({\frac{10000}{200000}}\right)+(100)\left({\frac{28945}{200000}}\right)\)</span></p>
+<p class="c1"><span class="mathjax-desmos">\(=164.47\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Thus, one would expect to win $164.47 from a $200 ticket.  Meaning we can expect to lose $35.53 on this lottery.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
@@ -728,7 +730,7 @@
 <table class="c106 c184"><tbody><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">Time</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">Frequency</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">1</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">10</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">2</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">12</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">3</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">18</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">4</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">25</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">5</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">15</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">6</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">10</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">7</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">6</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">8</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">1</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">9</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">1</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">10</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">2</span></p></td></tr></tbody></table>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18"><span>a) Define the </span><span class="c31">random variable</span><span class="c0">, X, for this context.</span></p>
-<p class="c18"><span>b) Determine the probability </span><img src="images/image147.png"/><span class="c0">for each outcome of this data.</span></p>
+<p class="c18"><span>b) Determine the probability </span><span class="mathjax-desmos">\(P(X=x)\)</span><span class="c0">for each outcome of this data.</span></p>
 <p class="c18"><span>c) Determine the </span><span class="c31">expected time </span><span class="c0">that it takes for a student to go to the washroom.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_usjt0jg3xut-0" start="2"><li class="c10 li-bullet-0"><span class="c0">At a city bank, transaction times with the tellers were recorded during a one-hour period. Times recorded in the table below are rounded to the nearest minute.</span></li></ol>
@@ -737,7 +739,7 @@
 <a id="t.17"></a>
 <table class="c106 c184"><tbody><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">Time</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">Frequency</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">1</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">18</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">2</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">14</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">3</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">10</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">4</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">6</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">5</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">2</span></p></td></tr><tr class="c21"><td class="c129" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">6+</span></p></td><td class="c110" colspan="1" rowspan="1"><p class="c4"><span class="c38 c64">0</span></p></td></tr></tbody></table>
 <p class="c18 c2"><span class="c0"></span></p>
-<p class="c18"><span>a) Define the random variable T to measure the transaction time.  Determine </span><img src="images/image148.png"/><span class="c0">for each outcome listed above.</span></p>
+<p class="c18"><span>a) Define the random variable T to measure the transaction time.  Determine </span><span class="mathjax-desmos">\(P(T=t)\)</span><span class="c0">for each outcome listed above.</span></p>
 <p class="c18"><span>b) Determine the </span><span class="c31">expected</span><span> </span><span class="c31">transaction time</span><span class="c0"> for this branch.</span></p>
 <ol class="c30 lst-kix_usjt0jg3xut-0" start="3"><li class="c10 li-bullet-0"><span>A game consists of cutting a shuffled deck of cards.  If you cut a </span><span class="c31">face card</span><span class="c0"> (Jack, Queen, or King) you win 10 cents. If you cut an Ace you win 25 cents.  If you cut anything else you lose a nickel.  What is the expected win/loss for this game?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
@@ -748,7 +750,7 @@
 <ol class="c30 lst-kix_usjt0jg3xut-0" start="5"><li class="c10 li-bullet-0"><span class="c0">A game consists of rolling a dodecahedral die (12 faces) and receiving a dollar amount equivalent to the roll.  What should the cost of the game be set at to ensure the minimum amount of gain for the host?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c5">Studies</span></p>
-<ol class="c30 lst-kix_usjt0jg3xut-0" start="6"><li class="c10 li-bullet-0"><span>The rules of a dice game are given as follows.  If the roll, n, is a prime number (2, 3, or 5) then the player wins $2n, whereas if the roll is a composite number (4, 6) the player loses </span><img src="images/image149.png"/><span class="c0">, if a one is rolled nothing happens.  What is the expected outcome for a player of this game?</span></li></ol>
+<ol class="c30 lst-kix_usjt0jg3xut-0" start="6"><li class="c10 li-bullet-0"><span>The rules of a dice game are given as follows.  If the roll, n, is a prime number (2, 3, or 5) then the player wins $2n, whereas if the roll is a composite number (4, 6) the player loses </span><span class="mathjax-desmos">\(\${n}^{2}\)</span><span class="c0">, if a one is rolled nothing happens.  What is the expected outcome for a player of this game?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_usjt0jg3xut-0" start="7"><li class="c10 li-bullet-0"><span class="c0">A kennel is to be enclosed with 20 m of fencing.  The length of the kennel is to be an integer length and is to be chosen randomly.  What is the expected area of the kennel?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
@@ -775,28 +777,28 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Solution</span><span class="c0">:</span></p>
 <ol class="c30 lst-kix_7atptiwmgp5-0 start" start="1"><li class="c10 li-bullet-0"><span class="c0">We first note that the outcome of each roll of the dice is independent of any previous outcome, and that furthermore for each roll the probability of rolling a doubles is given by </span></li></ol>
-<p class="c18"><img src="images/image150.png"/><span class="c0">.</span></p>
+<p class="c18"><span class="mathjax-desmos">\(P(doubles)=\frac{1}{6}\)</span><span class="c0">.</span></p>
 <p class="c18"><span class="c0">Drawing out the probability tree to help us visualize matters we get the following;</span></p>
 <p class="c18"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 380.56px; height: 246.50px;"><img alt="" src="images/image557.png" style="width: 380.56px; height: 246.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c18"><span class="c0">Highlighting the case where two doubles are rolled we get that,</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
-<p class="c18"><img src="images/image151.png"/></p>
-<p class="c18"><span class="c12">               </span><img src="images/image152.png"/></p>
-<p class="c18"><span class="c12">               </span><img src="images/image153.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(P(D=2)=P(DDD')+P(DD'D)+P(D'DD)\)</span></p>
+<p class="c18"><span class="c12">               </span><span class="mathjax-desmos">\(={\left({\frac{1}{6}}\right)}^{2}\left({\frac{5}{6}}\right)+\left({\frac{1}{6}}\right)\left({\frac{5}{6}}\right)\left({\frac{1}{6}}\right)+\left({\frac{5}{6}}\right){\left({\frac{1}{6}}\right)}^{2}\)</span></p>
+<p class="c18"><span class="c12">               </span><span class="mathjax-desmos">\(=3\cdot{}{\left({\frac{1}{6}}\right)}^{2}\left({\frac{5}{6}}\right)\)</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18"><span class="c0">Thus, in computing the other outcomes of the random variable D in a similar manner we tabulate our probability distribution as follows;</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <a id="t.f5688c997c2e377efcb2bbdfa553a2bb3681bbe9"></a>
 <a id="t.18"></a>
-<table class="c106 c184"><tbody><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c5 c12">d</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><span class="c12">P(D = </span><span class="c5 c12">d</span><span class="c38 c12">)</span></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">0</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><img src="images/image154.png"/></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">1</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><img src="images/image155.png"/></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">2</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><img src="images/image156.png"/></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">3</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><img src="images/image157.png"/></p></td></tr></tbody></table>
+<table class="c106 c184"><tbody><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c5 c12">d</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><span class="c12">P(D = </span><span class="c5 c12">d</span><span class="c38 c12">)</span></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">0</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\({\left({\frac{5}{6}}\right)}^{3}\)</span></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">1</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(3\cdot{}\left({\frac{1}{6}}\right){\left({\frac{5}{6}}\right)}^{2}\)</span></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">2</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\(3\cdot{}{\left({\frac{1}{6}}\right)}^{2}\left({\frac{5}{6}}\right)\)</span></p></td></tr><tr class="c21"><td class="c24" colspan="1" rowspan="1"><p class="c4"><span class="c38 c12">3</span></p></td><td class="c172" colspan="1" rowspan="1"><p class="c4"><span class="mathjax-desmos">\({\left({\frac{1}{6}}\right)}^{3}\)</span></p></td></tr></tbody></table>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_7atptiwmgp5-0" start="2"><li class="c10 li-bullet-0"><span class="c0">Our expected value can then be somewhat easily computed using by definition as follows;</span></li></ol>
-<p class="c18"><img src="images/image158.png"/></p>
-<p class="c18"><span class="c12">        </span><img/></p>
-<p class="c18"><span class="c12">        </span><img src="images/image159.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(E(D)=\sum\limits_{d}^{}d\cdot{}P(D=d)\)</span></p>
+<p class="c18"><span class="c12">        </span><span class="mathjax-desmos">\(=(0)\left({{\left({\frac{5}{6}}\right)}^{3}}\right)+(1)\left({3\cdot{}\left({\frac{1}{6}}\right){\left({\frac{5}{6}}\right)}^{2}}\right)+(2)\left({3\cdot{}{\left({\frac{1}{6}}\right)}^{2}\left({\frac{5}{6}}\right)}\right)+(3)\left({{\left({\frac{1}{6}}\right)}^{3}}\right)\)</span></p>
+<p class="c18"><span class="c12">        </span><span class="mathjax-desmos">\(=0.5\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -805,14 +807,14 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>To answer this let’s revisit the above example where we calculated </span><span class="c5">P (D = 2)</span><span class="c0">.  In this case, we took the varying cases whereby we could roll two doubles, and consequently roll one “non-double” as shown again below;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image151.png"/></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(P(D=2)=P(DDD')+P(DD'D)+P(D'DD)\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>Recognizing that each of the branches yield the same probability, namely, </span><img src="images/image160.png"/><span>  , we then just have to count the number of </span><span class="c5">arrangements</span><span> of the three “letters” making up </span><span class="c5">DDD’.</span><span class="c0">  Of course, we should recall this is one of our classic combinatorial problems, that of arrangements with identical elements, thus the number of branches that yield two doubles and one non-double turns out to be;</span></p>
-<p class="c1"><span class="c12">                </span><img src="images/image161.png"/><span class="c12">        OR        </span><img src="images/image162.png"/><span class="c0">                ways.</span></p>
+<p class="c1"><span>Recognizing that each of the branches yield the same probability, namely, </span><span class="mathjax-desmos">\({\left({\frac{1}{6}}\right)}^{2}\left({\frac{5}{6}}\right)\)</span><span>  , we then just have to count the number of </span><span class="c5">arrangements</span><span> of the three “letters” making up </span><span class="c5">DDD’.</span><span class="c0">  Of course, we should recall this is one of our classic combinatorial problems, that of arrangements with identical elements, thus the number of branches that yield two doubles and one non-double turns out to be;</span></p>
+<p class="c1"><span class="c12">                </span><span class="mathjax-desmos">\(\frac{3!}{2!}\)</span><span class="c12">        OR        </span><span class="mathjax-desmos">\({}_{3}{C}_{2}\)</span><span class="c0">                ways.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>giving us the equivalent expression for</span><span class="c5"> P (D = 2)</span><span>, namely</span><span class="c0">;</span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image163.png"/></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(P(D=2)={}_{3}{C}_{2}{\left({\frac{1}{6}}\right)}^{2}\left({\frac{5}{6}}\right)\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Let’s now extend our problem a little further.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -824,7 +826,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Since we are rolling two doubles, this means that at some point we won’t roll doubles on five occasions. Hence, any branch on this massive tree would yield a likelihood of;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c48 c147"><img src="images/image164.png"/></p>
+<p class="c48 c147"><span class="mathjax-desmos">\({\left({\frac{1}{6}}\right)}^{2}{\left({\frac{5}{6}}\right)}^{5}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>and so we’re again left with the task of determining how many branches yield this probability.  But this too is tackled in a similar manner as we must simply consider how many arrangements of </span><span class="c5">DDD’D’D’D’D’ </span><span class="c0">are possible.  Thus we get;</span></p>
 <p class="c1"><span class="c0">We can combinatorially think of the last expression as us selecting the two rolls where doubles are attained from the seven total, leaving the remaining five as unsuccessful attempts.</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 462.00px; height: 58.00px;"><img alt="" src="images/image638.png" style="width: 462.00px; height: 58.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
@@ -841,11 +843,11 @@
 <p class="c1"><span class="c0">Let’s not stop generalizing here.  If we have any situation whereby we have: </span></p>
 <ul class="c30 lst-kix_ok8if676mba8-0 start"><li class="c10 li-bullet-0"><span>repeated independent events with the chance of </span><span class="c5">success</span><span> equalling </span><span class="c5">p</span><span class="c0"> and</span></li><li class="c10 li-bullet-0"><span class="c0">the random variable X counts the number of successes resulting from these trials we get that;</span></li></ul>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>where, </span><span class="c5">n</span><span> represents the number of trials performed, </span><span class="c5">p</span><span> is the probability of success, and </span><img src="images/image165.png"/><span> is the probability of failure.  Such a random variable is classified to exhibit a </span><span class="c31">binomial distribution</span><span class="c0">.</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 227.00px; height: 53.00px;"><img alt="" src="images/image601.png" style="width: 227.00px; height: 53.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
+<p class="c1"><span>where, </span><span class="c5">n</span><span> represents the number of trials performed, </span><span class="c5">p</span><span> is the probability of success, and </span><span class="mathjax-desmos">\(q=(1-p)\)</span><span> is the probability of failure.  Such a random variable is classified to exhibit a </span><span class="c31">binomial distribution</span><span class="c0">.</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 227.00px; height: 53.00px;"><img alt="" src="images/image601.png" style="width: 227.00px; height: 53.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c38 c12"></span></p>
 <p class="c1"><span class="c0">It turns out that the expected value of a binomially distributed random variable is given by;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">                                </span><img src="images/image166.png"/></p>
+<p class="c1"><span class="c65">                                </span><span class="mathjax-desmos">\(E(X)=np\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>which is a shockingly simple expression!!  If we think about it, this should not be so surprising.  Given that any event has the same chance of success p and we perform n such events, then it would be reasonable to guess that we would on average obtain </span><span class="c5">np</span><span class="c0"> successes.  Of course this is not a rigid proof of this formula and it is somewhat tricky but it is within the scope of this course and so you are asked to tackle it in the repertoire portion of the practice.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -856,13 +858,13 @@
 <p class="c1"><span class="c73">Solution</span><span class="c0">:</span></p>
 <ol class="c30 lst-kix_ynrme9lm93m0-0 start" start="1"><li class="c10 li-bullet-0"><span class="c0">(Indirect Approach)</span></li></ol>
 <p class="c18"><span>Let </span><span class="c5">X</span><span> represent the number of defective pens found in the sample.  Clearly, X is </span><span class="c31">binomial</span><span class="c0"> as we have a fixed number of trials, 50, with each pen being examined having a 1% chance of being defective. Thus we get;</span></p>
-<p class="c18"><img src="images/image167.png"/></p>
-<p class="c18"><span class="c12">               </span><img src="images/image168.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(P(X&gt;2)=1-P(X\leq{}2)\)</span></p>
+<p class="c18"><span class="c12">               </span><span class="mathjax-desmos">\(=1-\left[{P(X=0)+P(X=1)+P(X=2)}\right]\)</span></p>
 <p class="c18"><span class="c12">               </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 400.50px; height: 38.59px;"><img alt="" src="images/image626.png" style="width: 400.50px; height: 38.59px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
-<p class="c18"><span class="c12">               </span><img src="images/image169.png"/></p>
+<p class="c18"><span class="c12">               </span><span class="mathjax-desmos">\(\simeq{}0.0138\)</span></p>
 <p class="c18"><span class="c0">Thus, there is about a 1.4% chance of the batch being declared defective.</span></p>
 <ol class="c30 lst-kix_ynrme9lm93m0-0" start="2"><li class="c10 li-bullet-0"><span>Let </span><span class="c5">Y</span><span> represent the number of defective pens in the entire batch.  Again, Y is also </span><span class="c31">binomial</span><span class="c0"> as we have a fixed number of trials, 10 000, with each pen having a 1% chance of being defective. This gives us;</span></li></ol>
-<p class="c18"><img src="images/image170.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(E(Y)=(10000)(0.01)=100\)</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18"><span class="c0">Thus, on average, each batch will yield 100 defective pens.</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
@@ -881,7 +883,7 @@
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c5">Studies</span></p>
 <ol class="c30 lst-kix_6en8eun7f48n-0" start="4"><li class="c10 li-bullet-0"><span class="c31">(Multinomial Distributions)</span><span class="c0"> </span></li></ol>
-<ol class="c30 lst-kix_rhn0fcnmz9n9-0 start" start="1"><li class="c6 li-bullet-0"><span>A </span><span class="c5">roulette</span><span class="c0"> wheel has 38 spaces whereby 18 are red, 18 are black, and 2 are green.  After 20 spins determine the probability that 12 resulted in red, 5 black, and 3 green?</span></li><li class="c6 li-bullet-0"><span>Generalize this situation by having X count the number of each type of outcome in </span><span class="c5">n</span><span> independent trials with each trial having one of three possible outcomes.  Determine a formula for </span><img src="images/image171.png"/><span class="c0">.</span></li><li class="c6 li-bullet-0"><span>Generalize further by accounting for </span><span class="c5">n</span><span> independent trials with </span><span class="c5">r</span><span class="c0"> different types of outcomes.</span></li></ol>
+<ol class="c30 lst-kix_rhn0fcnmz9n9-0 start" start="1"><li class="c6 li-bullet-0"><span>A </span><span class="c5">roulette</span><span class="c0"> wheel has 38 spaces whereby 18 are red, 18 are black, and 2 are green.  After 20 spins determine the probability that 12 resulted in red, 5 black, and 3 green?</span></li><li class="c6 li-bullet-0"><span>Generalize this situation by having X count the number of each type of outcome in </span><span class="c5">n</span><span> independent trials with each trial having one of three possible outcomes.  Determine a formula for </span><span class="mathjax-desmos">\(P(X=a,b,c)\)</span><span class="c0">.</span></li><li class="c6 li-bullet-0"><span>Generalize further by accounting for </span><span class="c5">n</span><span> independent trials with </span><span class="c5">r</span><span class="c0"> different types of outcomes.</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_6en8eun7f48n-0" start="5"><li class="c10 li-bullet-0"><span>For each positive integer </span><span class="c5">n</span><span>, what is the largest value of </span><span class="c5">p</span><span> such that zero is the most likely number of successes in </span><span class="c5">n</span><span> independent trials with success probability </span><span class="c5">p</span><span class="c0">?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
@@ -904,19 +906,19 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Solution</span><span class="c0">:</span></p>
 <p class="c1"><span class="c0">As we’re simply waiting for the first occurrence of doubles, we realize that the random variable R has an infinite set of outcomes associated with it, namely;</span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image172.png"/></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(R=\{0,1,2,3,4,...\}\)</span></p>
 <p class="c1"><span class="c0">For example, if R = 0, that would mean we rolled doubles on the first roll (i.e. no rolls occurred before obtaining doubles).</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Observing the  outcome R = 2, we know that the first two rolls failed to be doubles and then the third roll was a successful attempt at obtaining doubles.  As the rolls are successive and independent events we get that,</span></p>
-<p class="c1"><span>        </span><img src="images/image173.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(P(R=2)=\left({\frac{5}{6}}\right)\left({\frac{5}{6}}\right)\left({\frac{1}{6}}\right)={\left({\frac{5}{6}}\right)}^{2}\left({\frac{1}{6}}\right)\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Using similar reasoning, we get that for the case where R = 5 we get;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image174.png"/></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(P(R=5)={\left({\frac{5}{6}}\right)}^{5}\left({\frac{1}{6}}\right)\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">and so generalizing it’s easy to see that for any outcome of the random variable R we get that,</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c12">        </span><img src="images/image175.png"/></p>
+<p class="c1"><span class="c12">        </span><span class="mathjax-desmos">\(P(R=r)={\left({\frac{5}{6}}\right)}^{r}\left({\frac{1}{6}}\right)\)</span></p>
 <p class="c35"><span class="c0">⬛</span></p>
 <p class="c35 c2"><span class="c0"></span></p>
 <p class="c1"><span>At this stage you may have noticed some similarities between the above example and that of </span><span class="c39 c31">Example 2.9.1</span><span> where the random variable D was counting the number of doubles rolled after three rolls of two die.  Specifically, both types of random variables considered repeated independent events.  These type of events are commonly referred to as identical and independently distributed events or “</span><span class="c31">i.i.d.</span><span>” for short.  Moreover, </span><span class="c31">i.i.d.</span><span> events have only two possible outcomes they are referred to as </span><span class="c31">Bernoulli trials</span><span class="c0">. The fundamental difference however, is that when a random variable is binomial we are counting the number of successes from a fixed number of Bernoulli trials while with our random variable R we are counting how many trials (rolls) until the first success.</span></p>
@@ -925,11 +927,11 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <h3 class="c25" id="h.uswwhkw99ix0"><span class="c77 c74 c31">The General Probability for a Geometric Distribution</span></h3>
 <p class="c1"><span>In general, we define a random variable X which counts the number of trials before the first attained success from a series of Bernoulli trials </span><span class="c31">geometrically distributed</span><span>.  The general probability of </span><span class="c5">x</span><span class="c0"> trials is given by;</span></p>
-<p class="c1"><span class="c12">                </span><img src="images/image176.png"/><span class="c0">,</span></p>
+<p class="c1"><span class="c12">                </span><span class="mathjax-desmos">\(P(X=x)={q}^{x}p\)</span><span class="c0">,</span></p>
 <p class="c1"><span>with </span><span class="c5">p</span><span> representing the probability of a success and </span><span class="c5">q = 1 - p </span><span>represents</span><span class="c0"> the likelihood of a failure.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">It turns out that the expected value of a geometrically distributed random variable is given by the proportion;</span></p>
-<p class="c1"><span>                </span><img src="images/image177.png"/></p>
+<p class="c1"><span>                </span><span class="mathjax-desmos">\(E(X)=\frac{q}{p}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">The proof of this is left as an exercise to the reader in the practice problems.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -954,7 +956,7 @@
 <ol class="c30 lst-kix_u1ynd61udkou-0" start="7"><li class="c10 li-bullet-0"><span class="c0">Determine the expected number of rolls it would take to see all six faces of a single die. (Hint: Use the result from Studies problem 1b in this section repeatedly.)</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36"><span>        </span><span class="c5">Repertoire</span></p>
-<ol class="c30 lst-kix_u1ynd61udkou-0" start="8"><li class="c10 li-bullet-0"><span>If a random variable X is </span><span class="c31">geometrically distributed</span><span>, prove</span><span> that </span><img src="images/image177.png"/><span> .</span></li></ol>
+<ol class="c30 lst-kix_u1ynd61udkou-0" start="8"><li class="c10 li-bullet-0"><span>If a random variable X is </span><span class="c31">geometrically distributed</span><span>, prove</span><span> that </span><span class="mathjax-desmos">\(E(X)=\frac{q}{p}\)</span><span> .</span></li></ol>
 <p class="c1 c2"><span class="c0"></span></p>
 <h1 class="c47 c107 c48 c136" id="h.4m89zyyvoedj"><span class="c119 c88 c31"></span></h1>
 <h2 class="c37" id="h.7uj56u70cnpv"><span>2.10</span><span class="c50 c31"> Hyper-Geometric Distributions</span></h2>
@@ -974,15 +976,15 @@
 <p class="c1 c2"><span class="c38 c12"></span></p>
 <p class="c1 c2"><span class="c38 c12"></span></p>
 <p class="c1 c2"><span class="c38 c12"></span></p>
-<p class="c18"><img src="images/image178.png"/></p>
-<p class="c1"><span class="c12">                </span><img/></p>
-<p class="c1"><span class="c12">                </span><img src="images/image179.png"/><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 136.00px; height: 44.00px;"><img alt="" src="images/image572.png" style="width: 136.00px; height: 44.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
+<p class="c18"><span class="mathjax-desmos">\(P(H=2)=P(HHH')+P(HH'H)+P(H'HH)\)</span></p>
+<p class="c1"><span class="c12">                </span><span class="mathjax-desmos">\(=\left({\frac{13}{52}}\right)\left({\frac{12}{51}}\right)\left({\frac{39}{50}}\right)+\left({\frac{13}{52}}\right)\left({\frac{39}{51}}\right)\left({\frac{12}{50}}\right)+\left({\frac{39}{52}}\right)\left({\frac{13}{51}}\right)\left({\frac{12}{50}}\right)\)</span></p>
+<p class="c1"><span class="c12">                </span><span class="mathjax-desmos">\(=\frac{3!}{2!}\left[{\left({\frac{13}{52}}\right)\left({\frac{12}{51}}\right)\left({\frac{39}{50}}\right)}\right]\)</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 136.00px; height: 44.00px;"><img alt="" src="images/image572.png" style="width: 136.00px; height: 44.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c1 c2"><span class="c38 c12"></span></p>
 <p class="c1"><span class="c38 c12">                </span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c18"><span>The last rearrangement is not an overly obvious “simplification”.  Rather, let’s recognize that this expression leads us to a </span><span class="c31">generalization</span><span class="c0"> to solve this type of process as follows;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<ul class="c30 lst-kix_lqx1281rfsk1-0 start"><li class="c10 li-bullet-0"><span>since each branch that contained two hearts shared the same probability we then can count the number of branches which yield the selection of two hearts and one “non-heart”.  This simply becomes the combinatorial problem of arranging the symbols </span><span class="c31 c103">HH</span><span>H’, or put more concisely we are selecting the position where the two hearts were selected with the remaining being forced to be a “non-heart”.  Thus we get the expression </span><img src="images/image162.png"/><span class="c0"> </span></li></ul>
+<ul class="c30 lst-kix_lqx1281rfsk1-0 start"><li class="c10 li-bullet-0"><span>since each branch that contained two hearts shared the same probability we then can count the number of branches which yield the selection of two hearts and one “non-heart”.  This simply becomes the combinatorial problem of arranging the symbols </span><span class="c31 c103">HH</span><span>H’, or put more concisely we are selecting the position where the two hearts were selected with the remaining being forced to be a “non-heart”.  Thus we get the expression </span><span class="mathjax-desmos">\({}_{3}{C}_{2}\)</span><span class="c0"> </span></li></ul>
 <p class="c18 c2"><span class="c0"></span></p>
 <ul class="c30 lst-kix_lqx1281rfsk1-0"><li class="c10 li-bullet-0"><span class="c0">each branch which yielded two hearts can be thought of as selecting or arranging the two hearts selected from the 13 total while we must also select one of the 39 other cards, while in total we are drawing three cards from the 52 overall.</span></li></ul>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -993,8 +995,8 @@
 <table class="c106 c194"><tbody><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c56 c5 c65">H</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span class="c56 c5 c65">P(H = h)</span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">0</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 222.00px; height: 44.00px;"><img alt="" src="images/image523.png" style="width: 222.00px; height: 44.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">1</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 222.00px; height: 44.00px;"><img alt="" src="images/image632.png" style="width: 222.00px; height: 44.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">2</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 222.00px; height: 44.00px;"><img alt="" src="images/image656.png" style="width: 222.00px; height: 44.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">3</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 222.00px; height: 44.00px;"><img alt="" src="images/image579.png" style="width: 222.00px; height: 44.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr></tbody></table>
 <p class="c1 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_cl3dg0fs7bwi-0" start="2"><li class="c10 li-bullet-0"><span>Reverting back to fundamentals, we determine the </span><span class="c31">expected value</span><span class="c0"> to be;</span></li></ol>
-<p class="c18"><img src="images/image180.png"/></p>
-<p class="c18"><span class="c12">        </span><img src="images/image181.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(E(H)=\sum\limits_{h}^{}h\cdot{}P(H=h)\)</span></p>
+<p class="c18"><span class="c12">        </span><span class="mathjax-desmos">\(=(0)(0.414)+(1)(0.436)+(2)(0.138)+(3)(0.012)=0.75\)</span></p>
 <p class="c35"><span>⬛</span></p>
 <p class="c1"><span class="c73">Solution 2</span><span>: (</span><span class="c31">discounting order</span><span class="c0"> of selection)</span></p>
 <ol class="c30 lst-kix_e8hqojvzbtgc-0 start" start="1"><li class="c10 li-bullet-0"><span class="c0">We’ll again refer to the number of hearts selected as H, but in this case we’ll only recognize that in general we are selecting a total of three cards from the 52 total.  If we discount the order of selection the total number of ways this can occur is given by;</span></li></ol>
@@ -1008,7 +1010,7 @@
 <a id="t.20"></a>
 <table class="c106 c194"><tbody><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c56 c5 c65">H</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span class="c56 c5 c65">P(H = h)</span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">0</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 138.50px; height: 57.40px;"><img alt="" src="images/image597.png" style="width: 138.50px; height: 57.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">1</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 139.50px; height: 57.66px;"><img alt="" src="images/image609.png" style="width: 139.50px; height: 57.66px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">2</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 144.50px; height: 59.73px;"><img alt="" src="images/image521.png" style="width: 144.50px; height: 59.73px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr><tr class="c21"><td class="c177" colspan="1" rowspan="1"><p class="c4"><span class="c7">3</span></p></td><td class="c63" colspan="1" rowspan="1"><p class="c4"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 142.50px; height: 58.90px;"><img alt="" src="images/image636.png" style="width: 142.50px; height: 58.90px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p></td></tr></tbody></table>
 <p class="c1 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_e8hqojvzbtgc-0" start="2"><li class="c10 li-bullet-0"><span>Since the distribution is equivalent, we’ll get that </span><img src="images/image182.png"/></li></ol>
+<ol class="c30 lst-kix_e8hqojvzbtgc-0" start="2"><li class="c10 li-bullet-0"><span>Since the distribution is equivalent, we’ll get that </span><span class="mathjax-desmos">\(E(H)=0.75\)</span></li></ol>
 <p class="c35"><span class="c0">⬛</span></p>
 <h3 class="c25" id="h.1em6i46z22mq"><span class="c77 c74 c31">Generalizing Hyper-Geometric Distributions</span></h3>
 <p class="c1"><span>The previous example suggests two valid methods for generalizing the probability of a particular outcome of a </span><span class="c31">hyper-geometric</span><span class="c0"> random variable.</span></p>
@@ -1025,13 +1027,13 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">Despite this formula being somewhat easier to comprehend it is of greater importance to simply understand it rather than memorize!  Rewriting this in “words” as follows;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span>        </span><img src="images/image183.png"/></p>
+<p class="c1"><span>        </span><span class="mathjax-desmos">\(P(X=x)=\frac{(\#waystoselect"good"objects)(\#ofwaystoselect"bad"objects)}{(\#ofwaystoselecttheobjectsoverall)}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <h3 class="c25" id="h.7ljjszw6koqx"><span class="c77 c74 c31">Expected Value of a Hyper-Geometric Distribution</span></h3>
 <p class="c1"><span>The name </span><span class="c31">hyper-geometric</span><span class="c0">, as with the distributions discussed earlier, is derived from the calculation to determine the expected value of this type of random variable which turns out to be;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">                </span><img src="images/image184.png"/></p>
+<p class="c1"><span class="c65">                </span><span class="mathjax-desmos">\(E(X)=r\cdot{}\left({\frac{g}{n}}\right)\)</span></p>
 <p class="c1"><span>where </span><span class="c5">r, g, n</span><span class="c0"> represent the number of selections, “good” objects, and total objects respectively.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -1039,7 +1041,7 @@
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span>One might notice that this is similar to the formula for expectation of a binomial random variable given by </span><span class="c5">np</span><span class="c0">, and in fact they are highly similar.  The hyper-geometric expectation when written in words can be thought of as;</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
-<p class="c1"><span class="c65">                </span><img src="images/image185.png"/></p>
+<p class="c1"><span class="c65">                </span><span class="mathjax-desmos">\(E(X)=\left({\#trials}\right)\left({initialprobabilityofsuccess}\right)\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c0">with the only distinction from the binomial case being that we must consider the initial chance of success only as the events in this situation are dependent in nature.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
@@ -1078,7 +1080,7 @@
 <ol class="c30 lst-kix_vgcizxnwpzxf-0" start="3"><li class="c6 li-bullet-0"><span class="c0">Determine the long-term expected winnings for this game. Is this game fair?</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_c1rvtimx2o8f-0" start="7"><li class="c10 li-bullet-0"><span>Suppose a population of </span><span class="c5">N</span><span> elements consists of </span><span class="c5">G</span><span> “good”, </span><span class="c5">B</span><span> “bad”, and </span><span class="c5">I</span><span> “indifferent” elements, with </span><span class="c5">B + G + I = N</span><span>. If a random sample of size </span><span class="c5">n</span><span> is drawn without replacement from the population.  Determine the probability that there are g good elements, b bad elements, and i indifferent elements.  Generalize this formula to where there are m classes of elements (i.e. </span><img src="images/image186.png"/><span class="c0">.)</span></li></ol>
+<ol class="c30 lst-kix_c1rvtimx2o8f-0" start="7"><li class="c10 li-bullet-0"><span>Suppose a population of </span><span class="c5">N</span><span> elements consists of </span><span class="c5">G</span><span> “good”, </span><span class="c5">B</span><span> “bad”, and </span><span class="c5">I</span><span> “indifferent” elements, with </span><span class="c5">B + G + I = N</span><span>. If a random sample of size </span><span class="c5">n</span><span> is drawn without replacement from the population.  Determine the probability that there are g good elements, b bad elements, and i indifferent elements.  Generalize this formula to where there are m classes of elements (i.e. </span><span class="mathjax-desmos">\(P(X=[b,g,i])\)</span><span class="c0">.)</span></li></ol>
 <p class="c36"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 102.50px; height: 32.03px;"><img alt="" src="images/image556.png" style="width: 102.50px; height: 32.03px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""/></span></p>
 <p class="c36 c95"><span class="c56 c5 c90">Repertoire</span></p>
 <ol class="c30 lst-kix_c1rvtimx2o8f-0" start="8"><li class="c10 li-bullet-0"><span class="c0">a) Prove the identity</span></li></ol>
@@ -1111,11 +1113,11 @@
 <p class="c1"><span>For this solution, we’ll go through the process of a </span><span class="c31">hypothesis-test</span><span class="c0">, then summarize the strategy afterwards.</span></p>
 <ol class="c30 lst-kix_navgi1stpr40-0 start" start="1"><li class="c10 li-bullet-0"><span class="c31">State the Null Hypothesis H</span><span class="c61 c31">0</span><span class="c31">:</span></li></ol>
 <p class="c18"><span>We’ll begin by stating what these “normal” conditions are, this is called the null hypothesis and is usually denoted by H</span><span class="c61">0</span><span>.  In this case, since the number of correct guesses, </span><span class="c5">C</span><span>, is binomial, the key feature we’ll use to compare with is the likelihood of success </span><span class="c5">p</span><span class="c0">. Thus we have that,</span></p>
-<p class="c18"><span class="c12">        </span><img src="images/image187.png"/></p>
+<p class="c18"><span class="c12">        </span><span class="mathjax-desmos">\({H}_{0}:p=\frac{1}{5}\)</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_navgi1stpr40-0" start="2"><li class="c10 li-bullet-0"><span class="c31">State the Alternative Hypothesis H</span><span class="c61 c31">a</span><span class="c31">:</span></li></ol>
 <p class="c18"><span>Secondly, our own experiment suggests that Matt may in fact have a higher chance of success on each turn (possibly due to some extrasensory ability).  This gives rise to our alternate hypothesis, denoted by H</span><span class="c61">a</span><span class="c0">, given as;</span></p>
-<p class="c18"><span class="c12">        </span><img src="images/image188.png"/></p>
+<p class="c18"><span class="c12">        </span><span class="mathjax-desmos">\({H}_{a}:p&gt;\frac{1}{5}\)</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18"><span>Note:  We don’t use the actual experimental result, in this case </span><span class="c5">p = 0.7</span><span class="c0">, rather we’re just acknowledging that the result seemed to improve upon “normal” circumstances.</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
@@ -1131,9 +1133,9 @@
 <p class="c18"><span>First off , we’ll assume that the “null hypothesis” is still valid, thus in this case we are assuming that </span><span class="c5">p = 0.2</span><span class="c0">.</span></p>
 <p class="c18 c2"><span class="c0"></span></p>
 <p class="c18"><span>Now we test the likelihood of the experimental result, called the </span><span class="c31">p-value</span><span class="c0">:</span></p>
-<p class="c18"><img src="images/image189.png"/></p>
-<p class="c18"><span class="c12">                </span><img src="images/image190.png"/></p>
-<p class="c18"><span class="c12">                </span><img src="images/image191.png"/></p>
+<p class="c18"><span class="mathjax-desmos">\(P(C\geq{}7)=P(C=7)+P(C=8)+P(C=9)+P(C=10)\)</span></p>
+<p class="c18"><span class="c12">                </span><span class="mathjax-desmos">\(={}_{10}{C}_{7}{(0.2)}^{7}{(0.8)}^{3}+{}_{10}{C}_{8}{(0.2)}^{8}{(0.8)}^{2}+{}_{10}{C}_{9}{(0.2)}^{9}(0.8)+{(0.2)}^{10}\)</span></p>
+<p class="c18"><span class="c12">                </span><span class="mathjax-desmos">\(=0.000864\)</span></p>
 <p class="c18 c2"><span class="c77 c31 c12"></span></p>
 <p class="c18"><span class="c0">Note:  You may have noticed that we didn’t just take the specific result of getting 7 guesses correct, but instead observed 7 and above.  You’ll be asked to justify why this was done in the practice...it wasn’t in error!</span></p>
 <ol class="c30 lst-kix_navgi1stpr40-0" start="5"><li class="c10 li-bullet-0"><span class="c31">Conclude</span></li></ol>
@@ -1155,17 +1157,17 @@
 <p class="c1"><span class="c0">Each year the grade 10 secondary students in the province of Ontario participate in the Ontario Secondary School Literacy Test (OSSLT).  This test measures the provincial, school board, as well as individual school’s literacy rates.  Suppose our school has had an average pass rate of 88% over the past three years.  This year however, our school had 172 of 200 students pass the test; an 86% success rate. The principal is alarmed at this drop in success.  Determine whether or not this result is in fact significant to a significance level of 5%.</span></p>
 <p class="c1 c2"><span class="c0"></span></p>
 <p class="c1"><span class="c73">Solution</span><span class="c0">:</span></p>
-<ol class="c30 lst-kix_u2t7l0j2pmwx-0 start" start="1"><li class="c10 li-bullet-0"><span class="c31">Null Hypothesis:        </span><img src="images/image192.png"/></li></ol>
+<ol class="c30 lst-kix_u2t7l0j2pmwx-0 start" start="1"><li class="c10 li-bullet-0"><span class="c31">Null Hypothesis:        </span><span class="mathjax-desmos">\({H}_{0}:p=0.88\)</span></li></ol>
 <p class="c18 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_u2t7l0j2pmwx-0" start="2"><li class="c10 li-bullet-0"><span class="c31">Alternate Hypothesis:</span><span>        </span><img src="images/image193.png"/><span>                </span><span class="c76 c83">Since our result indicates a lower performance.</span></li></ol>
+<ol class="c30 lst-kix_u2t7l0j2pmwx-0" start="2"><li class="c10 li-bullet-0"><span class="c31">Alternate Hypothesis:</span><span>        </span><span class="mathjax-desmos">\({H}_{a}:p&lt;0.88\)</span><span>                </span><span class="c76 c83">Since our result indicates a lower performance.</span></li></ol>
 <p class="c18 c2"><span class="c76 c83"></span></p>
-<ol class="c30 lst-kix_u2t7l0j2pmwx-0" start="3"><li class="c10 li-bullet-0"><span class="c31">Significance Level:</span><span>        </span><img src="images/image194.png"/></li></ol>
+<ol class="c30 lst-kix_u2t7l0j2pmwx-0" start="3"><li class="c10 li-bullet-0"><span class="c31">Significance Level:</span><span>        </span><span class="mathjax-desmos">\(\alpha{}=0.05\)</span></li></ol>
 <p class="c36 c2"><span class="c0"></span></p>
 <p class="c36 c2"><span class="c0"></span></p>
-<ol class="c30 lst-kix_u2t7l0j2pmwx-0" start="4"><li class="c10 li-bullet-0"><span class="c31">p-Value:</span><span>                </span><img src="images/image195.png"/></li></ol>
-<p class="c36"><span>                                        </span><img src="images/image196.png"/></p>
-<p class="c36"><span>                                        </span><img src="images/image197.png"/></p>
-<p class="c36"><span>                                        </span><img src="images/image198.png"/></p>
+<ol class="c30 lst-kix_u2t7l0j2pmwx-0" start="4"><li class="c10 li-bullet-0"><span class="c31">p-Value:</span><span>                </span><span class="mathjax-desmos">\(P(S\leq{}172)\)</span></li></ol>
+<p class="c36"><span>                                        </span><span class="mathjax-desmos">\(=P(S=172)+P(S=171{)}_{}+...+P(S=1)+P(S=0)\)</span></p>
+<p class="c36"><span>                                        </span><span class="mathjax-desmos">\({=}_{200}{C}_{172}(0.88{)}^{172}(0.12{)}^{28}+...+(0.12{)}^{200}\)</span></p>
+<p class="c36"><span>                                        </span><span class="mathjax-desmos">\(=0.2196\)</span></p>
 <p class="c36 c2"><span class="c0"></span></p>
 <ol class="c30 lst-kix_u2t7l0j2pmwx-0" start="5"><li class="c10 li-bullet-0"><span class="c31">Conclusion:</span><span class="c0">                </span></li></ol>
 <p class="c18"><span class="c0">Thus, given the historical pass rate on this test there is nearly a 22% likelihood that this years class would achieve at this level.  Therefore, the result is not significant based on the historical pass rates.  Though it should be mentioned that a school community should always strive for improved results especially when it comes to literacy rates. </span></p>
@@ -1211,6 +1213,22 @@
 
             function scroll_to_id(id) {
                 document.getElementById(id).scrollIntoView();
+            }
+
+            function desmos(elem) {
+                window.parent.textbook(elem)
+            }
+    
+    
+            const elts = document.querySelectorAll('.mathjax-desmos');
+    
+            for (let i = elts.length - 1; i >= 0; --i) {
+                elts[i].dataset.jax = elts[i].innerText
+                elts[i].onclick = function () {
+                    let e = elts[i].innerText.substring(2, elts[i].innerText.length - 2);
+                    desmos(elts[i].dataset.jax.substring(2, elts[i].dataset.jax.length - 2));
+                };
+    
             }
         </script>
 

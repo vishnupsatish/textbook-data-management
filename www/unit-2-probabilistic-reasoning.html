@@ -7,12 +7,15 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="stylesheet" href="assets/style.css">
-        <title>Unit 2: Probabilistic Reasoning- Probabalistic and Statistical Reasoning</title>
+        <title>Unit 2: Probabilistic Reasoning - Probabalistic and Statistical Reasoning</title>
+        
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     </head>
     <body>
         
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar">
     <div class="navbar-brand">
       <a class="navbar-item" href="/title.html">
         <b>Probabalistic and Statistical Reasoning</b>
@@ -183,12 +186,77 @@
                 </div>
             </div>
         </div>
+
+        <div class="tabs is-toggle has-background-light is-fullwidth is-medium" data-elem="calculator">
+            <ul>
+                <li class="is-active tools-tab" id="graph-tab">
+                    <a onclick="tab_change('graph', this)">
+                        <span class="icon is-small"><i class="fas fa-chart-line" aria-hidden="true"></i></span>
+                        <span>Graphing Calculator</span>
+                    </a>
+                </li>
+                <li class="tools-tab" id="scientific-tab">
+                    <a onclick="tab_change('scientific', this)">
+                        <span class="icon is-small"><i class="fas fa-calculator" aria-hidden="true"></i></span>
+                        <span>Scientific Calculator</span>
+                    </a>
+                </li>
+                <li class="tools-tab" id="latex-tab">
+                    <a onclick="tab_change('latex', this)">
+                        <span class="icon is-small"><i class="fas fa-clipboard" aria-hidden="true"></i></span>
+                        <span>LaTeX Notes</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="graph">
+            <div class="mb-5 calc" id="calculator"></div>
+        </div>
+
+
+        <div class="dontshow" id="scientific">
+            <div class="mb-5 calc" id="scien-calculator"></div>
+        </div>
+
+        <div class="dontshow" id="latex">
+            <div class="columns mt-5">
+                <div class="column">
+                <textarea onscroll="sync_scroll_preview(this)" placeholder="Type some notes here! (Try using LaTeX)"
+                      class="textarea"
+                      oninput="show_latex(this)"
+                      id="latex_writer"></textarea>
+                </div>
+                <div class="column">
+                    <p id="show_latex"
+                       class="has-background-light"></p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>
 
+
+<script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 <script>
 
-    window.onhashchange = send_id;
+    const url = new URL(window.location.href);
+    const tab_to_show = url.searchParams.get("show");
+
+    if (['latex', 'graph', 'scientific'].includes(tab_to_show)) {
+        tab_change(tab_to_show, document.getElementById(`${tab_to_show}-tab`).childNodes[0])
+    }
+
+
+    const elt = document.getElementById('calculator');
+    const calculator = Desmos.GraphingCalculator(elt);
+
+    const scien_elt = document.getElementById('scien-calculator');
+    const scientific_calculator = Desmos.ScientificCalculator(scien_elt);
 
     function send_id() {
         const frame = window.frames['book-frame'];
@@ -202,8 +270,50 @@
         }
     }
 
+    window.onhashchange = send_id;
+
+    function tab_change(el, p) {
+        document.getElementById('scientific').classList.add('dontshow')
+        document.getElementById('graph').classList.add('dontshow')
+        document.getElementById('latex').classList.add('dontshow')
+
+        document.getElementById(el).classList.remove('dontshow')
+
+        for (const elem of document.getElementsByClassName('tools-tab')) {
+            elem.classList.remove('is-active')
+        }
+
+        p.parentNode.classList.add('is-active')
+
+        window.history.replaceState(null, null, `?show=${el}`);
+
+    }
+
+
+    let id_ = 0;
+
+    function textbook(eq) {
+        eq = eq.replaceAll('{T}_{1}:', '').replaceAll('{T}_{2}:', '').replaceAll('{T}_{3}:', '').replaceAll('{L}_{1}:', '').replaceAll('{L}_{2}:', '').replaceAll('{L}_{3}:', '').replaceAll('\\+', '').replaceAll('\\-', '-').replaceAll(':', '')
+        calculator.setExpression({id: 'graph' + id_, latex: eq});
+        id_ += 1;
+    }
+
+
+
+    function show_latex(elem) {
+        const val = elem.value
+        document.getElementById('show_latex').innerText = val
+        MathJax.typeset()
+        save_latex(elem.value)
+    }
+
+    function sync_scroll_preview(elem) {
+        document.getElementById('show_latex').scroll(0, elem.scrollTop)
+    }
+
 </script>
 
 
+        <script src="assets/script.js"></script>
     </body>
 </html>
