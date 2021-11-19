@@ -26,5 +26,6 @@
             run: |
               git config --global user.name 'Vishnu Satish'
               git config --global user.email 'vishnupsatish@users.noreply.github.com'
+              git add .
               git commit -m "Automated textbook build"
               git push origin master
