@@ -7,7 +7,10 @@ from slugify import slugify
 import requests
 import tinycss2
 from urllib.parse import unquote
+from download import download_book
 
+
+download_book()
 
 env = Environment(
     loader=FileSystemLoader("templates"),
