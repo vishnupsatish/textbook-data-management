@@ -45,8 +45,8 @@ shutil.copyfile('templates/index.html', 'www/index.html')
 with open('Textbook.html', 'r') as book_content:
     textbook = BeautifulSoup(book_content)
 
-# Parse HTML of the textbook (with images hyperlinked to Google) using BeautifulSoup
-with open('Textbook_images_hyperlinked.html', 'r') as book_content:
+# Parse HTML of the textbook (with images hotlinked to Google) using BeautifulSoup
+with open('Textbook_images_hotlinked.html', 'r') as book_content:
     textbook_img_hyp = BeautifulSoup(book_content)
 
 
@@ -55,7 +55,7 @@ textbook_style = textbook.head.style
 parsed_css = tinycss2.parse_stylesheet(textbook_style.text)
 
 # Get the imported URL from Google Fonts using the CSS parser
-import_url = parsed_css[0].prelude[1].arguments[0].value
+import_url = parsed_css[1].prelude[1].value
 
 # Get the text from the imported font URL (adding it directly as an @import throws a 403)
 import_font = requests.get(import_url).text
@@ -83,7 +83,7 @@ only_book_template = env.get_template('only-book.html')
 
 def make_textbook_file(name, start, end):
     with open(f'www/textbook/{name}.html', 'w+') as book:
-        book.write(only_book_template.render(textbook_content='\n'.join(map(str, textbook_body[start:end])), body_class=' '.join(textbook.body['class'])))
+        book.write(only_book_template.render(textbook_content='\n'.join(map(str, textbook_body[start:end])), body_style=textbook.body['style']))
 
 
 shutil.copytree('templates/images', 'www/textbook/images')
