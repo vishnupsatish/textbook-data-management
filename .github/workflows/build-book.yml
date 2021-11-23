@@ -30,7 +30,7 @@
               name: 'GOOGLE_TOKEN_JSON'
               value: ${{ env.GOOGLE_TOKEN_JSON }}
               repository: vishnupsatish/textbook-data-management
-              token: ${{ secrets.REPO_ACCESS_TOKEN }}
+              token: ${{ secrets.GITHUB_TOKEN }}
           - name: Commit to repository
             run: |
               git config --global user.name 'Vishnu Satish'
