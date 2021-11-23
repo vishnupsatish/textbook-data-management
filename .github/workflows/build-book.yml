@@ -24,11 +24,14 @@
               python script/main.py
             env:
               GOOGLE_TOKEN_JSON: ${{ secrets.GOOGLE_TOKEN_JSON }}
+          - name: Show Google token
+            run: |
+              echo ${{ env.NEW_GOOGLE_TOKEN_JSON }}
           - name: Update Google token
             uses: hmanzur/actions-set-secret@v2.0.0
             with:
               name: 'GOOGLE_TOKEN_JSON'
-              value: ${{ env.GOOGLE_TOKEN_JSON }}
+              value: ${{ env.NEW_GOOGLE_TOKEN_JSON }}
               repository: vishnupsatish/textbook-data-management
               token: ${{ secrets.REPO_ACCESS_TOKEN }}
           - name: Commit to repository
