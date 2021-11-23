@@ -11,6 +11,7 @@ import json
 from constants import *
 import shutil
 import glob
+from tqdm import tqdm
 
 
 # If modifying these scopes, delete the file token.json.
@@ -27,6 +28,9 @@ def encrypt(public_key: str, secret_value: str) -> str:
 
 def download_book():
     """Download the HTML and ZIP HTML versions of the textbook using the Google Drive API"""
+
+    api_progress = tqdm(total=2)
+    api_progress.set_description('Authenticating with Google Drive')
     creds = None
 
     token = os.environ.get('GOOGLE_TOKEN_JSON')
@@ -38,6 +42,8 @@ def download_book():
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
 
+    api_progress.update(1)
+    api_progress.set_description('Changing some GitHub stuff around')
 
     github_auth = HTTPBasicAuth(GITHUB_USER, os.environ.get('GITHUB_PAT'))
 
@@ -49,11 +55,19 @@ def download_book():
 
     requests.put(f'https://api.github.com/repos/{GITHUB_USER}/{REPO_NAME}/actions/secrets/GOOGLE_TOKEN_JSON', data=json.dumps(payload), auth=github_auth)
 
+    api_progress.update(1)
+    api_progress.close()
+
+
+    downloading_progress = tqdm(total=3)
+    downloading_progress.set_description('Deleting some unwanted files')
 
     shutil.rmtree('templates/images')
     os.remove('Textbook.html')
     os.remove('Textbook_images_hotlinked.html')
 
+    downloading_progress.update(1)
+    downloading_progress.set_description('Download the HTML of the textbook')
     
     service = build('drive', 'v3', credentials=creds)
 
@@ -61,6 +75,9 @@ def download_book():
     html = service.files().export_media(fileId=FILE_ID, mimeType='text/html').execute().decode('utf-8')
     with open('Textbook_images_hotlinked.html', "w+") as book:
         book.write(html)
+
+    downloading_progress.update(1)
+    downloading_progress.set_description('Download a ZIP of the textbook')
     
 
     zip_file = service.files().export_media(fileId=FILE_ID, mimeType='application/zip').execute()
@@ -76,6 +93,9 @@ def download_book():
     shutil.move(html_file, 'Textbook.html')
     shutil.move('downloaded_book/images', 'templates/images')
     shutil.rmtree('downloaded_book')
+
+    downloading_progress.update(1)
+    downloading_progress.close()
 
     
 

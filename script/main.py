@@ -7,6 +7,7 @@ from slugify import slugify
 import requests
 import tinycss2
 from urllib.parse import unquote
+from tqdm import tqdm
 from download import download_book
 
 
@@ -20,6 +21,10 @@ env = Environment(
 
 def rmw(txt):
     return " ".join(normalize('NFKD', txt).split())
+
+
+parsing_and_splitting = tqdm(total=4)
+parsing_and_splitting.set_description('Moving some files around')
 
 
 if not os.path.isdir('www'):
@@ -43,12 +48,14 @@ shutil.copyfile('templates/index.html', 'www/index.html')
 
 # Parse HTML of the textbook using BeautifulSoup
 with open('Textbook.html', 'r') as book_content:
-    textbook = BeautifulSoup(book_content)
+    textbook = BeautifulSoup(book_content, "html.parser")
 
 # Parse HTML of the textbook (with images hotlinked to Google) using BeautifulSoup
 with open('Textbook_images_hotlinked.html', 'r') as book_content:
-    textbook_img_hyp = BeautifulSoup(book_content)
+    textbook_img_hyp = BeautifulSoup(book_content, "html.parser")
 
+parsing_and_splitting.update(1)
+parsing_and_splitting.set_description('Parsing the CSS and getting a local copy of the fonts')
 
 # Get and parse CSS
 textbook_style = textbook.head.style
@@ -90,6 +97,8 @@ shutil.copytree('templates/images', 'www/textbook/images')
 
 shutil.copytree('templates/assets', 'www/assets')
 
+parsing_and_splitting.update(1)
+parsing_and_splitting.set_description('Converting all equations to MathJax')
 
 img = textbook.findChildren('img')
 img_hyp = textbook_img_hyp.findChildren('img')
@@ -105,6 +114,8 @@ for i, child in enumerate(img):
         new_tag.string = f'\\({equ}\\)'
         img[i].replaceWith(new_tag)
 
+parsing_and_splitting.update(1)
+parsing_and_splitting.set_description('Splitting the textbook')
 
 
 for i, element in enumerate(textbook_body):
@@ -127,3 +138,6 @@ book_template = env.get_template('book-page.html')
 for section in all_sections:
     with open(f'www/{slugify(section)}.html', 'w+') as book:
         book.write(book_template.render(current_main=slugify(section), section=section))
+
+parsing_and_splitting.update(1)
+parsing_and_splitting.close()
